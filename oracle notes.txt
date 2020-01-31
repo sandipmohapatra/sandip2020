@@ -1,0 +1,119 @@
+Every running oracle database is associated with an oracle instance.when a database is started on a database server,oracle allocates a memory area called the system global area (SGA) and starts one or more oracle processes. This combination of the SGA and the oracle processes is called oracle instance.
+Oracle instance background processes are:-
+1)database writer(DBWR)
+2)log writer(LGWR)
+3)checkpoint(CKPT)
+4)system monitor(SMON)
+5)process monitor(PMON)
+6)archiver  process(ARG)
+7)recoverer(RECO)
+
+SGA contains the following data structure
+1)database buffer cache
+2)Redo log buffer
+3)Shared pool
+4)java pool
+5)large pool
+6)data dictionary cache
+7)other miscellaneous information
+
+oracle instance :-
+1)an oracle instance is a combination of background processes and memory structures.
+2)the instance must be started to access the data in the database.
+3)Every time an instance is started , a system global area (SGA) is allocated and oracle background processes are started.
+4)The SGA is a memory area used to store database information that is shared by database processes.
+
+1)User process :-
+the user process is the application program that originates SQL statements.The server process executes the SQL statements send from the user process.
+
+2)database Files:-
+Database files are operating system files that provide the actual physical storage for database information.The database files are used to ensure that data is kept consistent and can be recovered in the event of a failure of the instance.
+
+3)The shared pool is used to store the most recently executed SQL statements and the most recently used data from the data dictionary.These SQL statements may be submitted by a user process or in the case of stored procedures, read from the data dictionary.
+
+4)The database buffer cache is used to store the most recently used data.The data is read from and written to data files.
+
+5)The redo log buffer is used to track changes made to the database by the server and background process.
+
+6)There are 2 optional memory structures in the SGA:
+1)java pool :- used to store java code.
+2)large pool :- used to store large memory structures not directly related to SQL statement processing .
+example:- data blocks copied during backup and restore operations.
+
+7)database writer is responsible for writing changed data from the database buffer cache to the database files.
+
+8)log writer writes changes registered in the redo log buffer to the redo log files.
+
+9)system monitor checks for consistency of the database and if necessary initiates recovery of the database when the database is opened.
+
+10)process monitor cleans up resources if one of the oracle process fails.
+
+11)the checkpoint process is responsible for updating database status information in the control files and data files whenever changes in the buffer cache are permanently recorded in the database.
+
+an sql query if success return data as result .it may be a single row or thousand of rows .the 3 stages of processing a query is :-
+1)parse 2)execute 3)fetch
+
+during the parse stage the sql statement is passed from the user process to the server process and a parsed representation of the qsl statement is loaded into a shared SQL area.
+
+during the parse the server process perform the flowing function:-
+1)searches for an existing copy of the sql statement in the shared pool.
+2)validates the sql statement by checking its syntax.
+3)performs data dictionary loopups to validate table and column definitions. 
+
+Shared pool components:-
+During the parse stage,the server process uses the area in the SGA known as the shared pool to compile the sql statement.The shared pool has 2 primary components:
+1)library cache
+2)Data dictionary cache
+
+
+Library cache :-
+The library cache stores information about the most recently used sql statement in a memory structure called a shared sql area. The shared sql area contains:
+1)The text of the SQL statement
+2)The parse tree :A compiled version of the statement
+3)The execution plan :The steps to be taken when executing the statement .
+
+data dictionary cache:-
+The data dictionary cache also known as the dictionary cache or row cache ,is a collection of the most recently used definitions in the database.It includes information about database files,tables,indexes ,columns,users,privileges and other database objects.
+
+Log writer :-
+LGWR writes when :-
+1)when a transaction commits
+2)when the redo log buffer is 1/3 full
+3)when there is more than a megabyte of changes recorded in the redo log buffer.
+4)before DBWO writes modified blocks in the database buffer cache to the data files.
+because the redo is needed for recovery ,LGWR confirms the commit only after the redo is written to disk.
+
+summary:-
+-----------------
+oracle database includes these files:-
+control files:-
+it contain information required to verify the integrity of the database ,including the names of the other files in the database .the control files are usually mirrored.
+
+data files:-contain the data in the database, including tables,indexes,rollback segments and temporary segments.
+
+online redo logs:-contain the changes made to the data files(online redo logs are used for recovery and usually mirrored)
+
+other files commonly used with the database include :-
+1)parameter file:- defines the characteristics of an oracle instance.
+2)password file:-authenticates privileged database users.
+3)archived redo logs :- are backups of the online redo logs.
+
+SGA Memory structures:-
+The system global area has three primary structures:-
+1)shared pool:- stores the most recently executed sql statements and the most recently used data from the data dictionary .
+2)database buffer cache :- stores the most recently used data.
+3)redo log buffer :- records changes made to the database using the instance.
+
+Background process:-
+1)database writer :- writes changed data to the data files
+2)log writer :- records changes to the data files in the online redo log files.
+3)system monitor :- checks for consistency and initiates recovery of the database when the database is opened.
+4)process monitor :- cleans up the resources if one of the processes fails.
+5)checkpoint process :-updates the database status information after a checkpoint.
+6)archiver :- backs up the online redo log to ensure recovery after a media failure.
+
+ 
+
+
+
+
