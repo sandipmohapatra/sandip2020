@@ -1,0 +1,44 @@
+Data type categories
+
+Data types in SQL Server are organized into the following categories:
+-------------------------------------------------------------------------------------
+Exact numerics
+Unicode character strings
+Approximate numerics
+Binary strings
+Date and time
+Character strings
+---------------------------------------------------------------------
+Exact numerics
+------------------------------------------
+bigint	numeric
+bit	smallint
+decimal	smallmoney
+int	tinyint
+money
+-----------------------------------------------	
+Approximate numerics
+------------------------------------------------
+float	real
+------------------------------------------------
+Date and time
+----------------------------------------------
+date	datetimeoffset
+datetime2	smalldatetime
+datetime	time
+--------------------------------
+Character strings
+--------------------------------
+char	varchar
+text	
+------------------------------------------
+Unicode character strings
+-----------------------------------------
+nchar	nvarchar
+ntext	
+-------------------------------------
+Binary strings
+-------------------------------------
+binary	varbinary
+image
+---------------------------------------------
