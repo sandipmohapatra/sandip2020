@@ -1,0 +1,116 @@
+SQL GRANT REVOKE Commands
+
+DCL commands are used to enforce database security in a multiple user database environment. Two types of DCL commands are GRANT and REVOKE. Only Database Administrator's or owner's of the database object can provide/remove privileges on a database object.
+
+SQL GRANT Command
+
+SQL GRANT is a command used to provide access or privileges on the database objects to the users.
+
+The Syntax for the GRANT command is:
+
+GRANT privilege_name
+ON object_name
+TO {user_name |PUBLIC |role_name}
+[WITH GRANT OPTION];
+
+privilege_name is the access right or privilege granted to the user. Some of the access rights are ALL, EXECUTE, and SELECT.
+
+object_name is the name of an database object like TABLE, VIEW, STORED PROC and SEQUENCE.
+
+user_name is the name of the user to whom an access right is being granted.
+
+user_name is the name of the user to whom an access right is being granted.
+
+PUBLIC is used to grant access rights to all users.
+
+ROLES are a set of privileges grouped together.
+
+WITH GRANT OPTION - allows a user to grant access rights to other users.
+
+For Example: GRANT SELECT ON employee TO user1; This command grants a SELECT permission on employee table to user1.You should use the WITH GRANT option carefully because for example if you GRANT SELECT privilege on employee table to user1 using the WITH GRANT option, then user1 can GRANT SELECT privilege on employee table to another user, such as user2 etc. Later, if you REVOKE the SELECT privilege on employee from user1, still user2 will have SELECT privilege on employee table.
+
+SQL REVOKE Command:
+
+The REVOKE command removes user access rights or privileges to the database objects.
+
+The Syntax for the REVOKE command is:
+
+REVOKE privilege_name
+ON object_name
+FROM {user_name |PUBLIC |role_name}
+
+For Example: REVOKE SELECT ON employee FROM user1;This command will REVOKE a SELECT privilege on employee table from user1.When you REVOKE SELECT privilege on a table from a user, the user will not be able to SELECT data from that table anymore. However, if the user has received SELECT privileges on that table from more than one users, he/she can SELECT from that table until everyone who granted the permission revokes it. You cannot REVOKE privileges if they were not initially granted by you.
+
+Privileges and Roles:
+Privileges: Privileges defines the access rights provided to a user on a database object. There are two types of privileges.
+
+1) System privileges - This allows the user to CREATE, ALTER, or DROP database objects.
+
+2) Object privileges - This allows the user to EXECUTE, SELECT, INSERT, UPDATE, or DELETE data from 			database objects to which the privileges apply.
+Few CREATE system privileges are listed below:
+
+System Privileges	Description
+------------------------------------------------------------------
+CREATE object	allows users to create the specified object in their own schema.
+CREATE ANY 	object	allows users to create the specified object in any schema.
+The above rules also apply for ALTER and DROP system privileges.
+
+Few of the object privileges are listed below:
+
+Object Privileges	Description
+INSERT		allows users to insert rows into a table.
+SELECT		allows users to select data from a database object.
+UPDATE		allows user to update data in a table.
+EXECUTE	allows user to execute a stored procedure or a function.
+
+Roles: Roles are a collection of privileges or access rights. When there are many users in a database it becomes difficult to grant or revoke privileges to users. Therefore, if you define roles, you can grant or revoke privileges to users, thereby automatically granting or revoking privileges. You can either create Roles or use the system roles pre-defined by oracle.
+
+Some of the privileges granted to the system roles are as given below:
+----------------------------------------------------------------------------------------------------
+System Role	Privileges Granted to the Role
+
+CONNECT	CREATE TABLE, CREATE VIEW, CREATE SYNONYM, CREATE SEQUENCE, 				CREATE SESSION etc.
+RESOURCE	CREATE PROCEDURE, CREATE SEQUENCE, CREATE TABLE, CREATE TRIGGER 			etc. The primary usage of the RESOURCE role is to restrict access to database objects.
+DBA		ALL SYSTEM PRIVILEGES
+
+
+Creating Roles:
+The Syntax to create a role is:
+
+CREATE ROLE role_name
+[IDENTIFIED BY password];
+
+For Example: To create a role called "developer" with password as "pwd",the code will be as follows
+
+CREATE ROLE testing
+[IDENTIFIED BY pwd];
+
+It's easier to GRANT or REVOKE privileges to the users through a role rather than assigning a privilege directly to every user. If a role is identified by a password, then, when you GRANT or REVOKE privileges to the role, you definitely have to identify it with the password.
+
+We can GRANT or REVOKE privilege to a role as below.
+
+For example: To grant CREATE TABLE privilege to a user by creating a testing role:
+
+First, create a testing Role
+
+CREATE ROLE testing
+
+Second, grant a CREATE TABLE privilege to the ROLE testing. You can add more privileges to the ROLE.
+
+GRANT CREATE TABLE TO testing;
+
+Third, grant the role to a user.
+
+GRANT testing TO user1;
+
+To revoke a CREATE TABLE privilege from testing ROLE, you can write:
+
+REVOKE CREATE TABLE FROM testing;
+
+The Syntax to drop a role from the database is as below:
+
+DROP ROLE role_name;
+
+For example: To drop a role called developer, you can write:
+
+DROP ROLE testing;
