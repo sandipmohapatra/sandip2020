@@ -1,0 +1,47 @@
+performance tunning
+---------------------------------
+
+SQL> select empid from emp where empid=101;
+
+SQL> create index IDX1_EMP_DEPT on emp(empid);
+
+Index created.
+
+SQL> alter index IDX1_EMP_DEPT monitoring usage;
+
+Index altered.
+
+SQL> select index_name,used, monitoring
+  2  from v$object_usage;
+
+INDEX_NAME                     USE      MON
+------------------------------ --- -------------------------------------
+IDX1_EMP_DEPT                  YES     YES
+
+
+Index Types
+------------------------------
+Indexes are definitely a useful tool for improving access to data in the database.
+
+index types in  oracle
+
+Primary Key Indexes: The primary key index is created for a table when a constraint is added, and we can either use an existing index or create a new one.
+
+Function-based Indexes: Oracle’s function-based index type can dramatically reduce query time. They are useful for large tables even with simple functions like UPPER to do string comparisons.
+
+Indexes for Views: Views use indexes on their associated tables to build information, but there might be a need for an index for selecting from a view. Oracle has materialized views, similar to views, but are a snapshot of the data. These materialized views can have functions and aggregations, along with subqueries and other views, including self-joins.
+
+Bitmap Indexes:these indexes are typically smaller in size and are useful for columns that have a low cardinality.
+
+Reverse Key Indexes: They are used as a nice little trick to spread out index blocks for a sequenced column. 
+
+Partitioned Indexes:  An index can be a locally partitioned index based on the partition key and setup used for each partition. Local indexes are easier to manage because they are handled with each partition, as partitions might be added, dropped, or merged.
+
+Invisible Indexes: Invisible indexes are hidden from the optimizer, but not from being maintained, so as rows are changed. One reason to use an invisible index is to test the performance of the queries without an index.
+
+
+Locking
+
+Holding locks on a database object will also cause another concurrent session to wait. Waiting to acquire a lock or perform a transaction could even cause blocking, depending on the locks required to perform a select transaction.
+
+A deadlock is when two or more users are waiting to access data locked by each other. When the deadlock occurs, Oracle chooses the victim, rolls back the transaction, and allows the other process to continue.
