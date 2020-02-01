@@ -1,0 +1,14 @@
+cluster:- acluster is memory  area reserved inside a tablespace in order to accomodate contents of more than one table which are usually related.clusters are used to increase the speed of data retrieval whenever a join of related table is employed.
+if related tables are created directly without a cluster each and every table is stored in its own segment and whenever a join condition is given to retrieve the combined rows of the related tables.oracle has to scan all the segments which contains the table data and this process will reduce the speed of data retrieval.
+
+step:-
+1)create a cluster
+2)place an index on cluster
+3)create the necessary table in a cluster.
+
+example:-
+1)create cluster c1(d number);
+2)create index cidx on cluster c1;
+3)create table dept(deptno number primary key,dname varchar2(15),loc varchar2(15) clustor c1(deptno);
+
+4) create table emp (empno number,ename varchar2(15),sal number,deptno number references dept(deptno))clustor c1(deptno);  
