@@ -1,0 +1,148 @@
+Why Artificial Intelligence?
+With the help of AI, you can create such software or devices which can solve real-world problems very easily and with accuracy such as health issues, marketing, traffic issues, etc.
+With the help of AI, you can create your personal virtual Assistant, such as Cortana, Google Assistant, Siri, etc.
+With the help of AI, you can build such Robots which can work in an environment where survival of humans can be at risk.
+AI opens a path for other new technologies, new devices, and new Opportunities.
+Goals of Artificial Intelligence
+Following are the main goals of Artificial Intelligence:
+
+Replicate human intelligence
+Solve Knowledge-intensive tasks
+An intelligent connection of perception and action
+Building a machine which can perform tasks that requires human intelligence such as:
+Proving a theorem
+Playing chess
+Plan some surgical operation
+Driving a car in traffic
+Creating some system which can exhibit intelligent behavior, learn new things by itself, demonstrate, explain, and can advise to its user.
+
+What Comprises to Artificial Intelligence?
+Artificial Intelligence is not just a part of computer science even it's so vast and requires lots of other factors which can contribute to it. To create the AI first we should know that how intelligence is composed, so the Intelligence is an intangible part of our brain which is a combination of Reasoning, learning, problem-solving perception, language understanding, etc.
+
+To achieve the above factors for a machine or software Artificial Intelligence requires the following discipline:
+
+Mathematics,Biology,Psychology,Sociology,Computer Science,Neurons Study,Statistics
+
+Advantages of Artificial Intelligence
+Following are some main advantages of Artificial Intelligence:
+
+High Accuracy with less errors: AI machines or systems are prone to less errors and high accuracy as it takes decisions as per pre-experience or information.
+
+High-Speed: AI systems can be of very high-speed and fast-decision making, because of that AI systems can beat a chess champion in the Chess game.
+
+High reliability: AI machines are highly reliable and can perform the same action multiple times with high accuracy.
+Useful for risky areas: AI machines can be helpful in situations such as defusing a bomb, exploring the ocean floor, where to employ a human can be risky.
+
+Digital Assistant: AI can be very useful to provide digital assistant to the users such as AI technology is currently used by various E-commerce websites to show the products as per customer requirement.
+
+Useful as a public utility: AI can be very useful for public utilities such as a self-driving car which can make our journey safer and hassle-free, facial recognition for security purpose, Natural language processing to communicate with the human in human-language, etc.
+
+---------------------------------------------------------------------------------------------------------------------------------
+Disadvantages of Artificial Intelligence
+Every technology has some disadvantages, and thesame goes for Artificial intelligence. Being so advantageous technology still, it has some disadvantages which we need to keep in our mind while creating an AI system. Following are the disadvantages of AI:
+
+High Cost: The hardware and software requirement of AI is very costly as it requires lots of maintenance to meet current world requirements.
+
+Can't think out of the box: Even we are making smarter machines with AI, but still they cannot work out of the box, as the robot will only do that work for which they are trained, or programmed.
+No feelings and emotions: AI machines can be an outstanding performer, but still it does not have the feeling so it cannot make any kind of emotional attachment with human, and may sometime be harmful for users if the proper care is not taken.
+Increase dependency on machines: With the increment of technology, people are getting more dependent on devices and hence they are losing their mental capabilities.
+No Original Creativity: As humans are so creative and can imagine some new ideas but still AI machines cannot beat this power of human intelligence and cannot be creative and imaginative.
+Prerequisite
+Before learning about Artificial Intelligence, you must have the fundamental knowledge of following so that you can understand the concepts easily:
+
+Any computer language such as C, C++, Java, Python, etc.(knowledge of Python will be an advantage)
+Knowledge of essential Mathematics such as derivatives, probability theory, etc.
+
+1. AI in Astronomy
+Artificial Intelligence can be very useful to solve complex universe problems. AI technology can be helpful for understanding the universe such as how it works, origin, etc.
+2. AI in Healthcare
+In the last, five to ten years, AI becoming more advantageous for the healthcare industry and going to have a significant impact on this industry.
+Healthcare Industries are applying AI to make a better and faster diagnosis than humans. AI can help doctors with diagnoses and can inform when patients are worsening so that medical help can reach to the patient before hospitalization.
+3. AI in Gaming
+AI can be used for gaming purpose. The AI machines can play strategic games like chess, where the machine needs to think of a large number of possible places.
+4. AI in Finance
+AI and finance industries are the best matches for each other. The finance industry is implementing automation, chatbot, adaptive intelligence, algorithm trading, and machine learning into financial processes.
+5. AI in Data Security
+The security of data is crucial for every company and cyber-attacks are growing very rapidly in the digital world. AI can be used to make your data more safe and secure. Some examples such as AEG bot, AI2 Platform,are used to determine software bug and cyber-attacks in a better way.
+6. AI in Social Media
+Social Media sites such as Facebook, Twitter, and Snapchat contain billions of user profiles, which need to be stored and managed in a very efficient way. AI can organize and manage massive amounts of data. AI can analyze lots of data to identify the latest trends, hashtag, and requirement of different users.
+7. AI in Travel & Transport
+AI is becoming highly demanding for travel industries. AI is capable of doing various travel related works such as from making travel arrangement to suggesting the hotels, flights, and best routes to the customers. Travel industries are using AI-powered chatbots which can make human-like interaction with customers for better and fast response.
+8. AI in Automotive Industry
+Some Automotive industries are using AI to provide virtual assistant to their user for better performance. Such as Tesla has introduced TeslaBot, an intelligent virtual assistant.
+Various Industries are currently working for developing self-driven cars which can make your journey more safe and secure.
+9. AI in Robotics:
+Artificial Intelligence has a remarkable role in Robotics. Usually, general robots are programmed such that they can perform some repetitive task, but with the help of AI, we can create intelligent robots which can perform tasks with their own experiences without pre-programmed.
+Humanoid Robots are best examples for AI in robotics, recently the intelligent Humanoid robot named as Erica and Sophia has been developed which can talk and behave like humans.
+10. AI in Entertainment
+We are currently using some AI based applications in our daily life with some entertainment services such as Netflix or Amazon. With the help of ML/AI algorithms, these services show the recommendations for programs or shows.
+11. AI in Agriculture
+Agriculture is an area which requires various resources, labor, money, and time for best result. Now a day's agriculture is becoming digital, and AI is emerging in this field. Agriculture is applying AI as agriculture robotics, solid and crop monitoring, predictive analysis. AI in agriculture can be very helpful for farmers.
+12. AI in E-commerce
+AI is providing a competitive edge to the e-commerce industry, and it is becoming more demanding in the e-commerce business. AI is helping shoppers to discover associated products with recommended size, color, or even brand.
+13. AI in education:
+AI can automate grading so that the tutor can have more time to teach. AI chatbot can communicate with students as a teaching assistant.
+AI in the future can be work as a personal virtual tutor for students, which will be accessible easily at any time and any place.
+
+AI type-1: Based on Capabilities
+1. Weak AI or Narrow AI:
+Narrow AI is a type of AI which is able to perform a dedicated task with intelligence.The most common and currently available AI is Narrow AI in the world of Artificial Intelligence.
+Narrow AI cannot perform beyond its field or limitations, as it is only trained for one specific task. Hence it is also termed as weak AI. Narrow AI can fail in unpredictable ways if it goes beyond its limits.
+Apple Siriis a good example of Narrow AI, but it operates with a limited pre-defined range of functions.
+IBM's Watson supercomputer also comes under Narrow AI, as it uses an Expert system approach combined with Machine learning and natural language processing.
+Some Examples of Narrow AI are playing chess, purchasing suggestions on e-commerce site, self-driving cars, speech recognition, and image recognition.
+2. General AI:
+General AI is a type of intelligence which could perform any intellectual task with efficiency like a human.
+The idea behind the general AI to make such a system which could be smarter and think like a human by its own.
+Currently, there is no such system exist which could come under general AI and can perform any task as perfect as a human.
+The worldwide researchers are now focused on developing machines with General AI.
+As systems with general AI are still under research, and it will take lots of efforts and time to develop such systems.
+3. Super AI:
+Super AI is a level of Intelligence of Systems at which machines could surpass human intelligence, and can perform any task better than human with cognitive properties. It is an outcome of general AI.
+Some key characteristics of strong AI include capability include the ability to think, to reason,solve the puzzle, make judgments, plan, learn, and communicate by its own.
+Super AI is still a hypothetical concept of Artificial Intelligence. Development of such systems in real is still world changing task.
+
+Types of Artificial Intelligence
+----------------------------------------------
+Artificial Intelligence type-2: Based on functionality
+1. Reactive Machines
+Purely reactive machines are the most basic types of Artificial Intelligence.
+Such AI systems do not store memories or past experiences for future actions.
+These machines only focus on current scenarios and react on it as per possible best action.
+IBM's Deep Blue system is an example of reactive machines.
+Google's AlphaGo is also an example of reactive machines.
+2. Limited Memory
+Limited memory machines can store past experiences or some data for a short period of time.
+These machines can use stored data for a limited time period only.
+Self-driving cars are one of the best examples of Limited Memory systems. These cars can store recent speed of nearby cars, the distance of other cars, speed limit, and other information to navigate the road.
+3. Theory of Mind
+Theory of Mind AI should understand the human emotions, people, beliefs, and be able to interact socially like humans.
+This type of AI machines are still not developed, but researchers are making lots of efforts and improvement for developing such AI machines.
+4. Self-Awareness
+Self-awareness AI is the future of Artificial Intelligence. These machines will be super intelligent, and will have their own consciousness, sentiments, and self-awareness.
+These machines will be smarter than human mind.
+Self-Awareness AI does not exist in reality still and it is a hypothetical concept.
+
+
+
+
+What is an Agent?
+An agent can be anything that perceiveits environment through sensors and act upon that environment through actuators. An Agent runs in the cycle of perceiving, thinking, and acting. An agent can be:
+
+Human-Agent: A human agent has eyes, ears, and other organs which work for sensors and hand, legs, vocal tract work for actuators. 
+
+Robotic Agent: A robotic agent can have cameras, infrared range finder, NLP for sensors and various motors for actuators.
+
+Software Agent: Software agent can have keystrokes, file contents as sensory input and act on those inputs and display output on the screen.
+Hence the world around us is full of agents such as thermostat, cellphone, camera, and even we are also agents.
+
+Before moving forward, we should first know about sensors, effectors, and actuators.
+
+Sensor: Sensor is a device which detects the change in the environment and sends the information to other electronic devices. An agent observes its environment through sensors.
+
+Actuators: Actuators are the component of machines that converts energy into motion. The actuators are only responsible for moving and controlling a system. An actuator can be an electric motor, gears, rails, etc.
+
+Effectors: Effectors are the devices which affect the environment. Effectors can be legs, wheels, arms, fingers, wings, fins, and display screen.
+
+
+

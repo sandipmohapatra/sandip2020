@@ -1,0 +1,56 @@
+Internet of Things
+---------------------------------------
+
+IoT is an advanced automation and analytics system which deals with artificial intelligence, sensor, networking, electronic, cloud messaging etc. to deliver complete systems for the product or services. The system created by IoT has greater transparency, control, and performance.
+
+As we have a platform such as a cloud that contains all the data through which we connect all the things around us. For example, a house, where we can connect our home appliances such as air conditioner, light, etc. through each other and all these things are managed at the same platform. Since we have a platform, we can connect our car, track its fuel meter, speed level, and also track the location of the car.
+
+IoT Introdoction
+If there is a common platform where all these things can connect to each other would be great because based on my preference, I can set the room temperature. For example, if I love the room temperature to to be set at 25 or 26-degree Celsius when I reach back home from my office, then according to my car location, my AC would start before 10 minutes I arrive at home. This can be done through the Internet of Things (IoT).
+
+Features of IOT
+The most important features of IoT on which it works are connectivity, analyzing, integrating, active engagement, and many more. Some of them are listed below:
+
+Connectivity: Connectivity refers to establish a proper connection between all the things of IoT to IoT platform it may be server or cloud. After connecting the IoT devices, it needs a high speed messaging between the devices and cloud to enable reliable, secure and bi-directional communication.
+
+Analyzing: After connecting all the relevant things, it comes to real-time analyzing the data collected and use them to build effective business intelligence. If we have a good insight into data gathered from all these things, then we call our system has a smart system.
+
+Integrating: IoT integrating the various models to improve the user experience as well.
+
+Artificial Intelligence: IoT makes things smart and enhances life through the use of data. For example, if we have a coffee machine whose beans have going to end, then the coffee machine itself order the coffee beans of your choice from the retailer.
+
+Sensing: The sensor devices used in IoT technologies detect and measure any change in the environment and report on their status. IoT technology brings passive networks to active networks. Without sensors, there could not hold an effective or true IoT environment.
+
+Active Engagement: IoT makes the connected technology, product, or services to active engagement between each other.
+
+Endpoint Management: It is important to be the endpoint management of all the IoT system otherwise, it makes the complete failure of the system. For example, if a coffee machine itself order the coffee beans when it goes to end but what happens when it orders the beans from a retailer and we are not present at home for a few days, it leads to the failure of the IoT system. So, there must be a need for endpoint management.
+
+Advantages and Disadvantages of (IoT)
+Any technology available today has not reached to its 100 % capability. It always has a gap to go. So, we can say that Internet of Things has a significant technology in a world that can help other technologies to reach its accurate and complete 100 % capability as well.
+
+Let's take a look over the major, advantages, and disadvantages of the Internet of Things.
+
+Advantages of IoT
+Internet of things facilitates the several advantages in day-to-day life in the business sector. Some of its benefits are given below:
+
+Efficient resource utilization: If we know the functionality and the way that how each device work we definitely increase the efficient resource utilization as well as monitor natural resources.
+Minimize human effort: As the devices of IoT interact and communicate with each other and do lot of task for us, then they minimize the human effort.
+Save time: As it reduces the human effort then it definitely saves out time. Time is the primary factor which can save through IoT platform.
+Enhance Data Collection:
+Improve security: Now, if we have a system that all these things are interconnected then we can make the system more secure and efficient.
+Disadvantages of IoT
+As the Internet of things facilitates a set of benefits, it also creates a significant set of challenges. Some of the IoT challenges are given below:
+
+Security: As the IoT systems are interconnected and communicate over networks. The system offers little control despite any security measures, and it can be lead the various kinds of network attacks.
+Privacy: Even without the active participation on the user, the IoT system provides substantial personal data in maximum detail.
+Complexity: The designing, developing, and maintaining and enabling the large technology to IoT system is quite complicated.
+
+example
+
+Bluetooth Module LED Controller
+Controlling Home Light Using Bluetooth
+Controlling Light using NodeMCU Relay WiFi
+Ultrasonic Sensor Distance calculation
+Sonar System Using Ultrasonic Sensor
+Temperature, Pressure, Measurement
+Temperature, Pressure and Altitude measurement
