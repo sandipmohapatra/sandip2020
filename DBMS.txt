@@ -1,3 +1,23 @@
+Structured Data
+Unstructured Data
+Semi-structured Data
+--------------------------------------
+Structured Data
+The data that has a structure and is well organized either in the form of tables or in some other way and can be easily operated is known as structured data. Searching and accessing information from such type of data is very easy.
+
+For example, data stored in the relational database in the form of tables having multiple rows and columns. The spreadsheet is an another good example of structured data.
+--------------------------------------------------------------------------------
+Unstructured Data
+The data that is unstructured or unorganized Operating such type of data becomes difficult and requires advance tools and softwares to access information.
+
+For Example, images and graphics, pdf files, word document, audio, video, emails, powerpoint presentations, webpages and web contents, wikis, streaming data, location coordinates etc.
+-----------------------------------------------------------------------------------------------------------
+Semi-Structured Data
+Semi-structured data is basically a structured data that is unorganised. Web data such JSON(JavaScript Object Notation) files,  .csv files, tab-delimited text files, XML and other markup languages are the examples of Semi-structured data found on the web.
+
+Due to unorganized information, the semi-structured is difficult to retrieve, analyze and store as compared to structured data. It requires software framework like Apache Hadoop to perform all this.
+----------------------------------------------------------------------------------------
+
 Database management system is software that is used to manage the database.
 ------------------------------------------------------------------------------------
 
