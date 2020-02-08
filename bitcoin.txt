@@ -5,6 +5,8 @@ A bitcoin is a type of digital assets which can be bought, sold, and transfer be
 
 A bitcoin is different from other traditional currencies such as Dollar, Pound, and Euro, which can also be used to buy things and exchange values electronically. There are no physical coins for bitcoins or paper bills. When you send bitcoin to someone or used bitcoin to buy anything, you don?t need to use a bank, a credit card, or any other third-party. Instead, you can simply send bitcoin directly to another party over the internet with securely and almost instantly.
 
+Blockchain and edge computing have an interesting interdependent relationship. Edge computing/a distributed compute architecture can provide an infrastructure for blockchain nodes to store and verify transactions. On the other hand, blockchain could enable a truly open distributed cloud marketplace.
+
 How Bitcoin Works?
 When you send an email to another person, you just type an email address and can communicate directly to that person. It is the same thing when you send an instant message. This type of communication between two parties is commonly known as Peer-to-Peer communication.
 
