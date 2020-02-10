@@ -1,0 +1,26 @@
+Middleware is software which lies between an operating system and the applications running on it. 
+
+Middleware enables communication and data management for distributed applications. 
+
+It is sometimes called controller, as it connects two applications together so data and databases can be easily passed between .
+
+Using middleware allows users to perform such requests as submitting forms on a web browser or allowing the web server to return dynamic web pages based on a user’s profile.
+
+Common middleware examples include database middleware, application server middleware, message-oriented middleware, web middleware and transaction-processing monitors.
+
+Each programme typically provides messaging services so that different applications can communicate using messaging frameworks like simple object access protocol (SOAP), web services, representational state transfer (REST) and JavaScript object notation (JSON).
+
+While all middleware performs communication functions, the type a company chooses to use will depend on what service is being used and what type of information needs to be communicated. 
+
+This can include security authentication, transaction management, message queues, applications servers, web servers and directories. 
+Middleware can also be used for distributed processing with actions occurring in real time rather than sending data back and front.
+
+
+example:-
+step-1)restful webservice (airline reservation)
+step-2)middleware (servlet)
+step-3)backend (oracle)
+step-4)display a message (success)
+
+
+
