@@ -137,8 +137,8 @@ The optimization of searches is more of an art than just science.
 Dashboard is a bit harsh as compared to tableau.
 It is continuously making attempts to replace it with open source alternatives.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
+https://github.com/sandipmohapatra/mphasis2020
+----------------------------------------------------------------
 2) Appdynamics
 Our Application Performance Management solution baselines, monitors and reports on the performance of all transactions that flow through your app. Our APM solution was built for production environments, which provides an agile approach when it comes to capturing the details of transactions. Automatically determine normal performance and stop false alarms with dynamic baselining for end-to-end response time.
 
@@ -147,10 +147,92 @@ When we determine that a Business Transaction has gone too far from its normal b
 At times the process of deep data capturing of transactions can become advantageous but AppDynamics has a feature that solves this need. 
 
 We have a feature that enables full system-wide data recording.
-
  Developer mode is ideal for pre-production environments and every single request will be captured through a transaction snapshot. Also, it will shut down automatically when it is accidently left on, so that your system won't stall if transaction volume rises.
 
 -------------------------------------------------------------------------------------------------------------------------------------
 3) Dynatrace
+APM ensures high performance for your software. Constant monitoring of your system allows you to manage the performance and availability of software applications. This leads to quick response times, improved computing processes and satisfied customers. Especially digital end user experience is one of the main goals when dealing with real user interactions and business transactions. The Dynatrace application performance monitoring tool saves the effort of interpreting such dependent events on your own and directs you to the component that might cause performance issues or problems for your customers. Fixing, accelerating, and optimizing your servers and software applications has never been so easy.
+
+DynaTrace Software is an Application Performance Monitoring  tool (APM) ,Which is widely used nowadays .It comes with advanced features for monitoring Java. Through which we can easily identify the performance of our application.
+
+
+We are using it to discover the existence of abnormalities in CPU Performance, response time, transaction rate, throughput and system usage.It has helped to diagnose and fix many performance issues at an early stage and make our application more value able.
+
+How does it work
+Dynatrace server should be installed on your system and it consists of host and agent . It has a dashboard through which we can diagnose our system on one place.
+
+Our server can easily interact with other agent if we want , for that we have to run some command  through terminal  and then we can easily watch the user interaction and also we can customize the time.
+
+ Benefits of Dyntrace
+For Testing you should have lot of data and through which you can check your system health such as CPU, Memory, Disk and Network Utilization,Storage Problems
+We can also look into the problem which are captured in dynatrace and then we can resolve those.
+With the help of it, developers and testers can ensure that their application works fast and is reliable.
+We can capture the issues before client complains about the same.
+----------------------------------------------------------------------------------------------------------------------------------------
 4) Nagios 
+DevOps lifecycle is a continuous loop of several stages, continuous monitoring is the last stage of this loop. Continuous monitoring is one of the stages in this lifecycle. In this chapter, let us learn in detail about what continuous monitoring is and how Nagios is helpful for this purpose.
+
+What is Continuous Monitoring
+Continuous monitoring starts when the deployment is done on the production servers. From then on, this stage is responsible to monitor everything happening. This stage is very crucial for the business productivity.
+
+There are several benefits of using Continuous monitoring −
+-------------------------------------------------------------------------
+It detects all the server and network problems.
+It finds the root cause of the failure.
+It helps in reducing the maintenance cost.
+It helps in troubleshooting the performance issues.
+It helps in updating infrastructure before it gets outdated.
+It can fix problems automatically when detected.
+It makes sure the servers, services, applications, network is always up and running.
+It monitors complete infrastructure every second.
+What is Nagios
+Nagios is an open source continuous monitoring tool which monitors network, applications and servers. It can find and repair problems detected in the infrastructure, and stop future issues before they affect the end users. It gives the complete status of your IT infrastructure and its performance.
+
+
+Nagios offers the following features making it usable by a large group of user community −
+--------------------------------------------------------------------------------------------------------------------
+It can monitor Database servers such as SQL Server, Oracle, Mysql, Postgres
+It gives application level information (Apache, Postfix, LDAP, Citrix etc.).
+Provides active development.
+Has excellent support form huge active community.
+Nagios runs on any operating system.
+It can ping to see if host is reachable.
+Benefits of Nagios
+Nagios offers the following benefits for the users −
+
+It helps in getting rid of periodic testing.
+It detects split-second failures when the wrist strap is still in the “intermittent” stage.
+It reduces maintenance cost without sacrificing performance.
+It provides timely notification to the management of control and breakdown.
+
+Nagios can be applicable to a wide range of applications. They are given here −
+
+Monitor host resources such as disk space, system logs etc.
+Monitor network resources – http, ftp, smtp, ssh etc.
+Monitor log files continuously to identify infra-issue.
+Monitor windows/linux/unix/web applications and its state.
+Nagios Remote Plugin Executer (NRPE) can monitor services remotely.
+Run service checks in parallel.
+SSH or SSL tunnels can also be used for remote monitoring.
+Send alerts/notifications
+via email, sms, pager of any issue on infrastructure
+Recommending when to upgrade the IT infrastructure.
+
+Nagios Architecture
+
+Nagios has server-agent architecture.
+Nagios server is installed on the host and plugins are installed on the remote hosts/servers which are to be monitored.
+Nagios sends a signal through a process scheduler to run the plugins on the local/remote hosts/servers.
+Plugins collect the data (CPU usage, memory usage etc.) and sends it back to the scheduler.
+Then the process schedules send the notifications to the admin/s and updates Nagios GUI.
+---------------------------------------------------------------------------------------------------------------------
 5)Solarwinds 
+SolarWinds Network Performance Monitor (NPM) is a powerful and affordable
+network monitoring software that enables you to quickly detect, diagnose, and resolve
+network performance problems and outages.
+
+NETWORK PERFORMANCE MONITOR AT A GLANCE
+» Speeds troubleshooting, increases service levels, and reduces downtime.
+» Monitors and displays response time, availability, and performance of network devices.
+» Improves operational efficiency with out-of-the-box dashboards, alerts, and reports.
+» Automatically discovers network devices and typically deploys in about an hour.
