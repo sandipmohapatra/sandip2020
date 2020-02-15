@@ -170,9 +170,6 @@ With the help of it, developers and testers can ensure that their application wo
 We can capture the issues before client complains about the same.
 ----------------------------------------------------------------------------------------------------------------------------------------
 4) Nagios 
-DevOps lifecycle is a continuous loop of several stages, continuous monitoring is the last stage of this loop. Continuous monitoring is one of the stages in this lifecycle. In this chapter, let us learn in detail about what continuous monitoring is and how Nagios is helpful for this purpose.
-
-What is Continuous Monitoring
 Continuous monitoring starts when the deployment is done on the production servers. From then on, this stage is responsible to monitor everything happening. This stage is very crucial for the business productivity.
 
 There are several benefits of using Continuous monitoring −
@@ -185,6 +182,7 @@ It helps in updating infrastructure before it gets outdated.
 It can fix problems automatically when detected.
 It makes sure the servers, services, applications, network is always up and running.
 It monitors complete infrastructure every second.
+
 What is Nagios
 Nagios is an open source continuous monitoring tool which monitors network, applications and servers. It can find and repair problems detected in the infrastructure, and stop future issues before they affect the end users. It gives the complete status of your IT infrastructure and its performance.
 
