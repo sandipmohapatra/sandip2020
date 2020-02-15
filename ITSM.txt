@@ -1,0 +1,156 @@
+ITSM 
+-------------------------------------------------------------------------------------
+IT service management (ITSM) is a general term that describes a  approach to design, deliver, manage and improve the way businesses use information technology (IT). ITSM includes all the IT activities and processes that support a service throughout its lifecycle, from 
+1)service management to change management,
+2)problem and incident management, 
+3)asset management, 
+4)knowledge management.
+
+An IT service enables access to information and processes to accomplish important business goals. 
+
+IT services include the deployment and support of enterprise applications. 
+
+IT teams must create, deploy, manage, optimize and potentially retire each service, with input from the business. 
+
+Each service can have an associated service-level agreement (SLA), which codifies the expectations of performance and availability .the service should not fall below these expectations.
+
+IT service delivery is generally discussed in terms of providers and customers, who interact via the IT service desk.
+
+ An IT service provider selects, designs, deploys and operates the service. The provider can be an internal IT department or a third-party specialist. An IT service customer is any consumer of those services, such as the employee who accesses email through the organization's Exchange Outlook interface. IT organizations generally offer customers an IT service catalog, a list or menu of available services.
+
+There are many roles within the IT service desk. IT services typically start with a need and strategy, and this demands clear guidance from business and IT leaders. 
+
+Services must then be architected and deployed, requiring the expertise of IT hardware and software application engineers. 
+
+Services must be monitored and tracked, and problems remediated by IT administrators and helpdesk staff.
+
+
+
+ITSM processes
+To manage IT services, organizations must control the service's capabilities, how it performs, changes to it and what happens when it experiences problems. 
+
+These processes fall under several main categories, primarily defined by ITIL, but appearing in various forms in the other ITSM frameworks.
+
+Change management. When a service is out of step with business expectations, it must be modified, expanded or otherwise altered. IT must determine how these changes will affect the service deployment, implement them appropriately, then monitor if the changes have the intended effect. Release management can be grouped with change management or treated as a separate process.
+
+Asset management. Services require software and hardware assets to function. These assets should be tracked, updated appropriately and mapped to show how they interact. 
+
+Configuration management, capacity management and asset management deal with these concerns and can be blended or separate processes.
+
+Project management. IT services transition between various stages of the lifecycle at different times and different speeds. Project management skills enable IT organizations to maintain orderly services and avoid problems such as outdated systems or shadow IT.
+
+Knowledge management. Knowledge management crosses into the other ITSM processes, and is a way to avoid duplicated work and discovery by organizing and making available information about IT services.
+
+Incident management. When an IT service is disrupted by performance issues or an outage, the IT service desk must address the issue, restore service availability and make improvements and codify procedures to prevent reoccurrence.
+
+Problem management. A problem is the root cause of an incident. An IT organization might remediate an incident but not fix the problem, leading to future incidents. Therefore, problem management is a way to permanently fix issues to improve service delivery and performance.
+
+
+Infra monitoring tools 
+
+1)Splunk
+---------------------
+Splunk is basically an American Multinational corporation that came into existence in the year 2003. The basic idea behind this foundation was developing a software that can search, monitor and analyze machine generated big data. Splunk, the product itself, manages and moulds real-time data into searchable repository. This can be used to take up many tasks such as generation of reports, graphs, dashboards, alerts and visualizations, etc.
+
+
+What is Splunk?
+Splunk is a digital platform that makes machine data accessible, usable, and valuable for everyone. It is an advance technology which is potent and scalable in nature, and is effectively able to search and index log data in the system. 
+
+It analyzes machine generated data in real-time to provide operational intelligence. As there is exponential growth in IT and its machines, handling data is one big challenge where Splunk plays very vital role. The very features of Splunk is are as follows:
+
+It deals with the data which is complex to understand.
+It manages data which is in unstructured format.
+It deals with data which is not useful for any analysis and visualization.
+
+Assume that you are a System Administrator and you have to figure out what’s wrong in the system. It will simply take hours of time to find out the troublemaker, and if you are working for an MNC, it is nearly impossible to get it out. Machine data in unstructured format, is complex to understand and is strictly not suitable to make analysis or visualization. Now, this is where Splunk comes into the picture.
+
+You can simply let it do all the dirty work for you i.e. data processing. After extracting the relevant data, it will be a lot more easier to locate the problems. Real time processing is its biggest selling point, as it is the bottleneck of data movement. Apart from this, there are many advantages associated with Splunk. Kindly take a look at the following points given below:
+
+It is a kind of Google for log file browsing. 
+Searches using simple terms with search processing language (SPL).
+Splunk system has direct storage facility, which means there’s no backend storage required.
+You can input data in any format i.e. json, .csv, or any other format.
+You can assign Alerts/Events in Splunk.
+You can make a precise estimation of the resources you need to scale up the infrastructure.
+The biggest achievement of Splunk is that it has never encountered a single failure. Apart from this, it has many other impressive features like easy installation, easy scalability, retention without losing granularity, etc. Moreover, Splunk behaviour analytics allows it to spot threats that arise due to user behaviour.
+
+Need of SplunkImg Source: 
+
+The Scope of Splunk
+The IoT (Internet of Things) is undeniably the future of our generation and managing different kinds of data together is not a piece of cake. Splunk got its immense popularity because of easy installation and widespread applications in big data analytics.The scope of Splunk is increasing rapidly as the IT sector is enhancing its arms day-by day. Every IT company, either big or small have to manage its machine data, and Splunk is undoubtedly the best in market to do that.
+
+Splunk has become a front runner among big players in the tech sector because of its diverse and flexibility in machine learning. It does not stop there it is always adding more functionality to its infrastructure making it more user friendly. At its current rate of growth the competition is going to be cut throat to its rivals soon. According to an estimation, Splunk as a company is going to hit the one billion mark either by end of 2018 or in the first quarter of 2019.
+
+Functionalities of Splunk
+Data Indexing
+Investigating and searching for the facilities
+Search mapping knowledge
+Alerts schedule
+Preparing Splunk reports
+Splunk is not only an easy to use tool but also provides a huge diversity of service to its users. This undeniably makes it the best option to deal with the big data of your company. Here, we are showcasing some awesome functionalities of Splunk, which can help you in knowing it better. Take a look at the below mentioned points:
+
+Data Indexing
+
+Splunk provides the facility of indexing of data like log files, traps and alerts, configurations, etc. The capability of indexing wide varieties of data from every possible server, platform and applications makes it unique in its own way. Regardless of data’s origin, Splunk is capable of indexing it without any parser or adapter. It can even store the data in both forms i.e. raw and separately processed data (which is compressed, organised, and operable).
+
+Investigating and Searching for facilities
+
+Users also get investigating and searching facilities under Splunk. It provides error detection in every tier of infrastructure. It is a very powerful tool which gives user the power to search and investigate in infinite fields. Splunk can check errors in every level of infrastructure in the architecture without letting the error to proceed further eliminating and improvising from the origin of error only. Apart from this, it also provides the ability to proceed till the end for further flexibility.
+
+Search mapping knowledge
+
+Splunk also offers search optimization through knowledge mapping. It simply optimizes the search by adding the knowledge of event, field, transactions, etc. User is able to improvise the search by adding event, location, tag, etc. Moreover, Splunk has an advantage of mapping the data at the time of search, which provides Splunk a huge edge over others. Apart from this, user is also able to share the reports, tables, indexes, searches, dashboards, etc on almost every platform used in the organisation.
+
+Alerts schedule
+
+Splunk also provides the functionality of adding notifications accordingly. One can easily get notified through Splunk monitoring system through alarms and notifications for various kinds of things as per the requirements. This alerting facility can be used over a variety of platforms and applications through Splunk infrastructure. The notifications can be shared via email or Snmp. This feature protects companies from fraudulent, data theft, information leakage and damage.
+
+Preparing Splunk reports
+
+The most dynamic and useful functionality of splunk is its ability of transferring files. As we know very well that Splunk provides user the capability of analyzing big data at a very high speed along with the creation of charts, graphs, histograms, tables, etc. It also provides the facility of  creating an outstanding report which can be shared through email and printed notes.
+
+Thus, the Splunk’s ability to deal with various issues in real time at a very high speed helps users in numerous ways and empowers them to perform more efficiently.
+
+Pros and cons of Splunk
+Splunk is doubtlessly a panacea to deal with machine generated big data. But, just like any other digital platform, it comes with its own list of pros and cons. Here, we are showcasing that list, by which you can simply analyze whether it’s needed for your business or not. Kindly take a look at the below mentioned points.
+
+Pros of Splunk
+
+It is easy to use.
+It can be used by anyone within an organization (i.e. IT, managers, CEO etc.)
+It comes with a lot of plugins and customizations.
+It has an impressive dashboard along with search and charting tools.
+There is no need of external databases in it.
+It supports any amount and any format of data.
+Real time indexing of your IT data.
+It automatically discovers useful information in data to make your work even more concise.
+It makes your system smarter by saving searches and tagging useful information.
+It offers alerts to automate the monitoring of systems.
+It develops analytical reports with graphs, interactive charts, and tables.
+It lets you share these reports with your desired ones.
+It reviews your IT systems continuously to head off server downtimes and security incidents before they arise.
+
+Cons of Splunk
+
+Pricing gets a bit higher for large data volumes.
+The optimization of searches is more of an art than just science.
+Dashboard is a bit harsh as compared to tableau.
+It is continuously making attempts to replace it with open source alternatives.
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2) Appdynamics
+Our Application Performance Management solution baselines, monitors and reports on the performance of all transactions that flow through your app. Our APM solution was built for production environments, which provides an agile approach when it comes to capturing the details of transactions. Automatically determine normal performance and stop false alarms with dynamic baselining for end-to-end response time.
+
+When we determine that a Business Transaction has gone too far from its normal behavior, our agent can automatically collect full call stack details in order to troubleshooting the issue. This smart-analytics method enables AppDynamics to find and alert problems from the very beginning, so that they can be fixed before any major impact occurs.
+
+At times the process of deep data capturing of transactions can become advantageous but AppDynamics has a feature that solves this need. 
+
+We have a feature that enables full system-wide data recording.
+
+ Developer mode is ideal for pre-production environments and every single request will be captured through a transaction snapshot. Also, it will shut down automatically when it is accidently left on, so that your system won't stall if transaction volume rises.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+3) Dynatrace
+4) Nagios 
+5)Solarwinds 
