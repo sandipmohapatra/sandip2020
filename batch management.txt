@@ -1,0 +1,133 @@
+
+Batch Management
+---------------------------------------------
+
+A batch job is a scheduled program that runs without user intervention and is frequently used to automate tasks that need to be performed on a regular basis. Batch jobs that need to be processed on a regular basis are incorporated into batch schedules.
+
+When defining batch jobs, you have to determine whether the batch job is a member of a sequence of batch jobs that run off a schedule on a regular basis. If this is the case, you should place those batch jobs within a batch schedule. 
+
+You can define batch jobs that always run under one specific operating system at the complex level as well. You can define batch jobs to a specific operating system that are usually bound to a particular resource such as a database or data set. Be aware that batch job names are unique within an operating system.
+
+Batch Process Resource Types
+
+
+
+Batch Schedule
+A Batch Schedule is the resource that represents a schedule, stream, or batch process. It is a container for all batch jobs running from the same schedule. For example, if you have a set of batch jobs that run sequentially from a schedule that updates all files nightly for a medical records application, you would define that set of batch jobs within a batch schedule. You can name it the MRFU batch schedule to indicate "Medical Records Files Update."
+
+A console administrator determines which batch schedules they need to monitor. After that determination is made, the administrator creates the schedules within the console. Each batch schedule within the console is derived from an equivalent schedule from a scheduling product.
+
+-------------------------------
+
+Four types of production
+
+
+There are 4 different types of productions which are most commonly used. Which type of production should be used by the company depends on the type of product being manufactured, the demand of the product as well as the supply of raw materials. Taking these factors into consideration, below are the 4 types of Production.
+
+Page Contents	
+1) Unit or Job type of production
+This type of production is most commonly observed when you produce one single unit of a product. A typical example of the same will be tailored outfits which are made just for you or a cake which is made just like you want it.
+
+Example of Unit type of production
+
+It is one of the most common types of products used because it is generally used by small businesses like restaurants, individual products providers or individual services providers.
+
+Types of Production - 1
+It is also a type of production used by very premium companies like Harley Davidson, or Dell. Harley Davidson actually has a lot of accessories which can be customized, and which suit the individual. Same ways, you can design your own DELL laptop on their website with the given specifications.
+
+2) Batch type of Production
+It is one of the types of production most commonly used in consumer durables, FMCG or other such industries where there are large variety of products with variable demands. Batch production takes place in batches. The manufacturer already knows the number of units he needs to a manufacturer and they are manufactured in one batch.
+
+So, if a manufacturer has the shortage of Product X and 100 units of this product is consumed in one month, then the manufacturer can give orders for batch production of 100 units of Product X.
+
+Types of Production - 2
+Example of Batch production
+
+LG has many different types of home appliance products in its portfolio. It has to manufacture all these different variants of the same type of product. There would be 10-20 types of mixer grinders alone in the product portfolio of LG home appliances. Thus, a company like LG manufactures these variants via Batch production.
+
+First, one type of mixer will be manufactured completely and then the second type will be manufactured. They are manufactured on the basis of demand. Depending on demand, the batch production can produce the number of units required in one batch.
+
+The batches may be as small as 10 units or they may be as large as 1 lakh units of the same products. However, as long as there is a defined quantity of product which has to be manufactured before moving on to the next item in the list, it is known as batch production. Examples of batch production include FMCG like Biscuits, confectionaries, packaged food items etc. It is used in Medicines, Hardware, Consumer durables and many such industries.
+
+Features of Batch production
+
+Production is done in batches
+The total number of units required is decided before the batch production starts
+Once a batch production starts, stopping it midway may cost a huge amount to the company.
+Demand plays a major role in a batch production. Example – seasonality of products.
+3) Mass Production or Flow production
+One of the best examples of mass production is the manufacturing process adopted by Ford. Mass production is also known as flow production or assembly line production. It is one of the most common types of products used in the automobile industry and is also used in industries where continuous production is required.
+
+An Assembly line or mass production plant typically focus on specialization. There are multiple workstations installed and the assembly line goes through all the workstations turn by turn. The work is done in a specialized manner and each workstation is responsible for one single type of work. As a result, these workstations are very efficient and production due to which the whole assembly line becomes productive and efficient.
+
+Types of Production - 3
+Products which are manufactured using mass production are very standardized products. High sophistication is used in the manufacturing of these products. If 1000 products are manufactured using mass production, each one of them should be exactly the same. There should be no deviation in the product manufactured.
+
+Features of Mass Production
+
+Mass production is generally used to dole out huge volumes of the product
+It is used only if the product is standardized
+Demand does not play a major role in a Mass production. However, production capacity determines the success of a mass production.
+Mass production requires huge initial investment and the working capital demand is huge too.
+4) Continuous production or Process production
+There is a lot of confusion between mass production and continuous production. It can be differentiated by a single element. The amount of mechanical work involved. In Mass production, both machines and humans work in tandem. However, in continuous production, most of the work is done by machines rather than humans. In continuous production, the production is continuous,24×7 hours, all days in a year.
+
+A good example of the Continous production is brewing. In brewing, the production goes on 24 hours a day and 365 days a year. This is because brewing takes a lot of time and production is important. As a result, there is a continuous input of raw materials such as malt or water, and there is continuous output in the form of beer or other alcoholic drink. The key factor in this is that the brewing and fermentation process itself is time-consuming, and the maximum time is spent in the fermentation which is a continuous process.
+
+Types of Production - 4
+There are many chemicals which are manufactured in the form of a continuous process due to the huge demand across the world. Similarly, the Plastic industry is known to adopt the continuous production methodology where production can go continuously for weeks or months depending on the demand. Once the production starts, you only need to feed in the raw material, and the machines turn out the finalized products.
+
+Features of Continuous production
+
+Majority of the work is done by machines rather than humans
+Work is continuous in nature. Once production starts, it cannot be stopped otherwise it will cause huge loss.
+A very controlled environment is required for continuous production.
+---------------------------------------------
+Batch Processing
+Batch processing is the processing of transactions in a group or batch. No user interaction is required once batch processing is underway. This differentiates batch processing from transaction processing, which involves processing transactions one at a time and requires user interaction.
+
+While batch processing can be carried out at any time, it is particularly suited to end-of-cycle processing, such as for processing a bank's reports at the end of a day or generating monthly or biweekly payrolls.
+
+KEY TAKEAWAYS
+Batch processing is a technique for automating and processing multiple transactions as a single group.
+Batch processing helps in handling tasks like payroll, end-of-month reconciliation, or settling trades overnight.
+Batch processing systems can save money and labor over time, but they may be costly to design and implement up-front.
+Understanding Batch Processing
+For large enterprises, batch processing became a normal way of data compilation, organization, and report generation around the middle of the 20th century with the introduction of the mainframe computer. The early mechanics of processing a batch involved feeding a computer a stack of punched cards that held commands, or directions, for the computer to follow.
+
+Herman Hollerith (1860-1929) is credited with developing the punch card around 1890 when he was employed as a statistician for the U.S. Census Bureau. It was this punch card that became the seed for widespread batch processing around 50 years later.
+
+Batch processing jobs are run on regularly scheduled times (e.g., overnight) or on an as-needed basis. As an example, bills for utilities and other services received by consumers are typically generated by batch processing each month. Batch processing is beneficial because it is a cost-effective means of handling large amounts of data at once. One caveat is that the inputs for the processing must be correct or else the results of the whole batch will be faulty, which would cost time and money.
+
+A Brief History of Batch Processing
+A defining characteristic of batch processing is a lack of human intervention, with few, if any, manual processes to kick it off. This is part of what makes it so efficient in modern times, but it wasn't always that way.
+
+Batch processing started with punch cards, which were tabulated into instructions for computers. Entire decks, or batches, of cards would be processed at one time. This system, created by Herman Hollerith, goes as far back as 1890. Hollerith developed it to be used to process data from the U.S. Census. Punched manually, the card was fed into and ready by an electromechanical device. Hollerith later formed a company that would become IBM.
+
+Batch Processing Today
+Unlike earlier iterations, the functions of modern batch processing are completely automated to meet certain conditions of time. While some tasks are done immediately, others are conducted in real-time. The latter are monitored on a regular basis. If there are any problems with the process, the system notifies the appropriate personnel through exception-based management alerts. This saves managers time for their daily duties and other pressing tasks without having to supervise the batch processing system.
+
+The software identifies exceptions through a system of monitors and dependencies, which cause the batch processing to start. Exceptions may include online customer orders or a request from the system for new supplies.
+
+Advantages of Batch Processing
+Faster and Lower Cost
+Operational costs such as labor and equipment are cut when batch processing is used. This is because it eliminates the need for human clerks and physical hardware like computers. And because batch processing is designed to be quick and efficient, and to cut out human error, key personnel can focus their efforts on their daily duties.
+
+Offline Features
+Unlike others, batch processing systems work anywhere, any time. That means they continue to work outside regular business hours. They can also work in the background in an offline setting, so even during down periods, you can rest assured they'll still work without putting a dent in the organization's daily routine.
+
+Hands-Off Approach
+As mentioned above, having a batch processing system in place gives managers and other key personnel time to do their own jobs without having to spend time on supervising batches. Alerts are sent if there are ever any problems. This allows the manager to take a hands-off approach to batch processing.
+
+Disadvantages of Batch Processing
+Business owners may want to consider a few of the pitfalls of batch processing before putting such a system into place.
+
+Deployment and Training
+Like many technologies, a degree of training is required to manage batch processing systems. Managers will need to learn what triggers a batch, how to schedule them, and what exception notifications mean, among other things.
+
+Debugging
+Someone within the company or organization should be familiar with the system. That's because they're often very complex. Without a knowledgable person on the team, you may need to hire someone else to help you out.
+
+Cost
+Batch processing infrastructure can be an expensive capital outlay. For some businesses, the costs may seem unfeasible.
+
