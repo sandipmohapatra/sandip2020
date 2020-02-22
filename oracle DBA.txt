@@ -1,0 +1,110 @@
+1. What is an Oracle Database?
+Oracle provides software to create and manage the Oracle Database. The database consists of physical and logical structures in which system, user, and control information are stored. The software that manages the database is called the Oracle Database server. Collectively, the software that runs Oracle and the physical database is called the Oracle Database system.
+
+A database buffer cache stores the data in memory for quicker access. The redo logs track and store all the changes made to the database. A Data Guard ensures data protection and high availability of data, and a control file records the physical structure of the database.
+
+
+2. What are the roles of DBA?
+A DBA has the authority to create new users, remove the existing users, or modify any of the environment variables or privileges assigned to other users.
+
+ Manage database storage
+Administer users and security
+ Manage schema objects
+ Monitor and manage database performance
+ Perform backup and recovery
+Schedule and automate jobs
+Want to become a certified Oracle Database Administrator? Enroll now!
+
+3. What are the different Oracle Database objects?
+Tables
+Views
+Indexes
+Synonyms
+Sequences
+Tablespaces
+4. What are the benefits of ORDBMS?
+In ORDBMS, the objects can be stored as they are. The language of the DBMS can be integrated with an object-oriented programming language. The language may even be exactly the same as that used in the application, which does not force the programmer to have two representations of his objects.
+
+
+
+5. What is an Oracle index?
+An index is an optional structure associated with a table to have direct access to rows that can be created to increase the performance of data retrieval. An index can be created on one or more columns of a table.
+
+6. What are the common Oracle DBA tasks?
+As an Oracle DBA, we have to carry out the following tasks:
+
+Installing Oracle software
+Creating Oracle databases
+Performing upgrades of the database and software to new release levels
+Starting up and shutting down the database
+Managing the database’s storage structures
+Managing users and security
+ Managing schema objects, such as tables, indexes, and views
+ Making database backups and performing recovery when necessary
+ Proactively monitoring the database’s health and taking preventive or corrective actions as required
+Monitoring and tuning performance
+In a small-to-midsize database environment, a single DBA might be the sole person performing all these tasks. In large enterprise environments, the whole job is often divided among several DBAs titled as Database Security Administrator or Database Tuning Expert, each with his/her own area of specialties.
+
+
+7. List out the tools for administering the database.
+Following are some of the products, tools, and utilities we use in achieving our goals as a Database Administrator:
+
+Oracle Universal Installer (OUI): The Oracle Universal Installer installs the Oracle software and options. It can automatically launch the Database Configuration Assistant to install a database.
+Database Configuration Assistant (DBCA): The Database Configuration Assistant creates a database from the templates that are supplied by Oracle, or we can create our own templates. In this case, it enables us to copy a preconfigured seed database, thus saving the time and effort of customizing and generating a database from scratch.
+Database Upgrade Assistant: This tool guides us through the upgrading of our existing database to a new Oracle release.
+Oracle Net Manager: This tool guides us through our Oracle network configuration.
+Oracle Enterprise Manager: The primary tool for managing our database is Oracle Enterprise Manager, a web-based interface. Once we install the Oracle software, create or upgrade a database, and configure the network, we can use Oracle Enterprise Manager as the single interface for managing our database. In addition, Oracle Enterprise Manager also provides an interface for performance advisors and an interface for Oracle utilities such as SQL*Loader and Recovery Manager.
+10. Differentiate between a cluster and a grid.
+Clustering is one technology used to create a grid infrastructure. Simple clusters have static resources for specific applications by specific owners.
+
+Grids, which can consist of multiple clusters, are dynamic resource pools shareable among many different applications and users. A grid does not assume that all servers in it are running the same set of applications. Applications can be scheduled and migrated across servers in the grid. Grids share resources from and among independent system owners.
+
+At the highest level, the idea of grid computing is computing as a utility. In other words, we need not care where our data resides or which computer processes our request. We should be able to request information or computation and have it delivered as per our requirement. This is analogous to the way the electric utilities work; without knowing where the generator is or how the electric grid is wired, we just ask for electricity and we get it. The goal is to make computing a utility, a commodity, and ubiquitous. Hence the name ‘Grid’. This perspective of utility computing is, of course, a ‘client-side’ view.
+
+From the ‘server-side’ (or behind the scenes), the grid is about resource allocation, information sharing, and high availability. Resource allocation ensures that all those, who request resources, are getting what they need and that those resources are not standing idle while requests go unserviced. Information sharing makes sure that the information, the users and applications need, is available as and when it is requested for. High availability features guarantee that all the data and computation are always available as a utility.
+
+
+
+8. Explain the architecture of Oracle Grid.
+The Oracle Grid architecture pools large numbers of servers, storage, and networks into a flexible, on-demand computing resource for enterprise computing needs. The grid computing infrastructure continually analyzes the demand for resources and adjusts the supply accordingly.
+
+For example, we can run different applications on a grid of several linked database servers. When reports are due at the end of the month, the Database Administrator can automatically provision more servers to that application to handle the increased demand.
+
+Grid computing uses sophisticated workload management that makes it possible for applications to share resources across many servers. Data processing capacity can be added or removed on demand, and resources within a location can be dynamically provisioned. Web services can quickly integrate applications to create new business processes.
+
+9.Clustering with Real Application Clusters
+
+Clustering is ideal for two or more servers that have shared resources, such as disks. In case there is a hardware failure on one server in the cluster, the other servers can pick up the workload until the failed server is brought back up.
+
+Oracle RAC servers share a disk and have the same Oracle Database but with different instances running on each node. If one node fails, the connections failover to the other nodes. The instances do not failover, because they are just the processes on each server that access the same data. Oracle Database is available from any of the nodes in the cluster.
+
+The advantage of Oracle RAC is that resources on both nodes are used by the database, and each node uses its own memory and CPU. Information is shared between nodes through the interconnect—the virtual private network.
+
+Real Application Clusters provide high availability because of the failover of connections in the event of a hardware failure or server connection failure. The RAC environment also provides high availability for patching with rolling upgrades (Oracle Database 11g). We can easily add a new server with memory and CPU to the cluster, make new connections to the new node, and the workload will be rebalanced among all of the nodes.
+
+10.What is Database
+The database is a collection of inter-related data which is used to retrieve, insert and delete the data efficiently. It is also used to organize the data in the form of a table, schema, views, and reports, etc.
+
+For example: The college Database organizes the data about the admin, staff, students and faculty etc.
+
+Using the database, you can easily retrieve, insert, and delete the information.
+
+Database Management System
+Database management system is a software which is used to manage the database. For example: MySQL, Oracle, etc are a very popular commercial database which is used in different applications.
+DBMS provides an interface to perform various operations like database creation, storing data in it, updating data, creating a table in the database and a lot more.
+It provides protection and security to the database. In the case of multiple users, it also maintains data consistency.
+DBMS allows users the following tasks:
+
+Data Definition: It is used for creation, modification, and removal of definition that defines the organization of data in the database.
+Data Updation: It is used for the insertion, modification, and deletion of the actual data in the database.
+Data Retrieval: It is used to retrieve the data from the database which can be used by applications for various purposes.
+User Administration: It is used for registering and monitoring users, maintain data integrity, enforcing data security, dealing with concurrency control, monitoring performance and recovering information corrupted by unexpected failure.
+Characteristics of DBMS
+It uses a digital repository established on a server to store and manage the information.
+It can provide a clear and logical view of the process that manipulates data.
+DBMS contains automatic backup and recovery procedures.
+It contains ACID properties which maintain data in a healthy state in case of failure.
+It can reduce the complex relationship between data.
+It is used to support manipulation and processing of data.
+It is used to provide security of data.
+It can view the database from different viewpoints according to the requirements of the user.

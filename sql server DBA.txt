@@ -1,0 +1,192 @@
+Q2) What purpose does the model database serve?
+The model database, as its name implies, serves as the model (or template) for all databases created on the same instance. If the model database is modified, all subsequent databases created on that instance will pick up those changes, but earlier created databases will not. Note that TEMPDB is also created from model every time SQL Server starts up.
+
+Q3) How do you trace the traffic hitting a SQL Server?
+SQL profiler is the SQL Server utility you can use to trace the traffic on the SQL Server instance. Traces can be filtered to narrow down the transactions that are captured and reducing the overhead incurred for the trace. The trace files can be searched, saved off, and even replayed to facilitate troubleshooting.
+
+Q4) What types of replication are supported in SQL Server?
+SQL Server has three types of replication: Snapshot, Merge, and Transaction. Snapshot replication creates a snapshot of the data (point-in-time picture of the data) to deliver to the subscribers. This is a good type to use when the data changes infrequently, there is a small amount of data to replicate, or large changes occur over a small period of time.
+
+Merge replication uses a snapshot to seed the replication. Changes on both sides of the publication are tracked so the subscriber can synchronize with the publisher when connected. A typical use for this type of replication is in a client and server scenario. A server would act as a central repository and multiple clients would independently update their copies of the data until connected. At which time, they would all send up their modifications to the central store.
+
+Transaction replication also begins with a snapshot only this time changes are tracked as transactions (as the name implies). Changes are replicated from publisher to subscriber the same as they occurred on the publisher, in the same order as they occurred, and in near real-time. This type of replication is useful when the subscriber needs to know every change that occurred to the data (not point-in-time), when the change volume is high, and when the subscriber needs near real-time access to the changes.
+
+Q5) Why would you use SQL Agent?
+SQL Agent is the job scheduling mechanism in SQL Server. Jobs can be scheduled to run at a set time or when a specific event occurs. Jobs can also be executed on demand. SQL Agent is most often used to schedule administrative jobs such as backups.
+
+Q6) What happens on checkpoint?
+
+Checkpoints, whether scheduled or manually executed, cause the transaction log to be truncated up to the beginning of the oldest open transaction (the active portion of the log). That is, the dirty pages from the buffer cache are written to disk. Storing committed transactions in the cache provides a performance gain for SQL Server. However, you do not want the transaction log to get too big because it might consume too many resources and, should your database fail, take too long to process to recover the database.
+
+One important thing to note here is that SQL Server can only truncate up to the oldest open transaction. Therefore, if you are not seeing the expected relief from a checkpoint, it could very well be that someone forgot to commit or rollback their transaction. It is very important to finalize all transactions as soon as possible.
+
+Q7) What is DBCC?
+DBCC statements are Database Console Commands and come in four flavors: Maintenance, Informational, Validation, and Miscellaneous. Maintenance commands are those commands that allow the DBA to perform maintenance activities on the database such as shrinking a file. Informational commands provide feedback regarding the database such as providing information about the procedure cache. Validation commands include commands that validate the database such as the ever-popular CHECKDB. Finally, miscellaneous commands are those that obviously don’t fit in the other three categories. This includes statements like DBCC HELP, which provides the syntax for a given DBCC command.
+
+Q8) How can you control the amount of free space in your index pages?
+You can set the fill factor on your indexes. This tells SQL Server how much free space to leave in the index pages when re-indexing. The performance benefit here is fewer page splits (where SQL Server has to copy rows from one index page to another to make room for an inserted row) because there is room for growth built into the index.
+
+Q9) Why would you call Update Statistics?
+Update Statistics is used to force a recalculation of query optimization statistics for a table or indexed view. Query optimization statistics are automatically recomputed, but in some cases, a query may benefit from updating those statistics more frequently. Beware though that re-computing the query statistics causes queries to be recompiled. This may or may not negate all performance gains you might have achieved by calling update statistics. In fact, it could have a negative impact on performance depending on the characteristics of the system.
+
+Q10) What is a correlated sub-query?
+A correlated sub-query is a nested query that is linked to the outer query. For instance, say I wanted to find all the employees who have not entered their time for the week. I could query the Employee table to get their first and last name, but I need to look at the TimeEntry table to see if they’ve entered their time or not. I can’t do a straight join here because I’m looking for the absence of time data, so I’ll do a correlated sub-query similar to this:
+
+SELECT FirstName, LastName
+FROM EMPLOYEE e
+WHERE NOT EXISTS (SELECT 1 FROM TimeEntry te
+WHERE te.EmpID = e.EmpID
+AND te.WeekID = 35)
+
+Notice that the inner query relates to the outer query on the employee ID, thus making it a correlated sub-query. The inner query will be evaluated once per outer query row.
+
+Q11) What authentication modes does SQL Server support?
+SQL Server supports Windows Authentication and mixed-mode. Mixed-mode allows you to use both Windows Authentication and SQL Server Authentication to log into your SQL Server. It’s important to note that if you use Windows Authentication, you will not be able to log in as sa.
+
+Q12) Explain about your SQL Server DBA Experience.
+This is a generic question often asked by many interviewers. Explain what are the different SQL Server Versions you have worked on, what kind of administration of those instances has been done by you. Your role and responsibilities carried out in your earlier projects that would be of significance to the potential employer. This is the answer that lets the interviewer know how suitable are you for the position to which you are being interviewed.
+
+Q13) What are the different SQL Server Versions you have worked on?
+The answer would be depending on the versions you have worked on, I would say I have experience working in SQL Server 7, SQL Server 2000, 2005 and 2008. If you have worked only some version be honest in saying that, remember, no one would be working on all versions, it varies from individual to individual.
+
+Q15) What is the difference between Clustered and Non-Clustered Index?
+In a clustered index, the leaf level pages are the actual data pages of the table. When a clustered index is created on a table, the data pages are arranged accordingly based on the clustered index key. There can only be one Clustered index on a table.
+
+In a Non-Clustered index, the leaf level pages do not contain data pages instead it contains pointers to the data pages. There can multiple non-clustered indexes on a single table.
+
+Q16) What are the new features in SQL Server 2005 when compared to SQL Server 2000?
+There are quite a lot of changes and enhancements in SQL Server 2005. Few of them are listed here:
+
+Database Partitioning
+Dynamic Management Views
+System Catalog Views
+Resource Database
+Database Snapshots
+SQL Server Integration Services
+Support for Analysis Services on a Failover Cluster.
+
+1.Profiler being able to trace the MDX queries of the Analysis Server.
+2.Peer-to peer Replication
+3.Database Mirroring
+
+Q17) What are the High-Availability solutions in SQL Server and differentiate them briefly.
+Failover Clustering, Database Mirroring, Log Shipping, and Replication are the High-Availability features available in SQL Server. I would recommend reading this blog of mine which explains the differences between these 4 features.
+
+Q18) How do you troubleshoot errors in a SQL Server Agent Job?
+Inside SSMS, in Object Explorer under SQL Server Agent look for Job Activity Monitor. The job activity monitor displays the current status of all the jobs on the instance. Choose the particular job which failed, right-click and choose view history from the drop-down menu. The execution history of the job is displayed and you may choose the execution time (if the job failed multiple times during the same day). There would information such as the time it took to execute that Job and details about the error occurred.
+
+Q19) What is the default Port No on which SQL Server listens?
+1433
+
+
+Q20) How many files can a Database contain in SQL Server? How many types of data files exist in SQL Server? How many of those files can exist for a single database?
+1. A Database can contain a maximum of 32,767 files.
+2. There are Primarily 2 types of data files Primary data file and Secondary data file(s)
+3. There can be only one Primary data file and multiple secondary data files as long as the total  of files is less than 32,767 files
+
+Q21) What is DCL?
+DCL stands for Data Control Language.
+
+Q22) What are the commands used in DCL?
+GRANT, DENY and REVOKE.
+
+Q23) What is Fill Factor?
+SQL Server DBA Certification Training!
+Explore Curriculum
+Fill Factor is a setting that is applicable to Indexes in SQL Server. The fill factor value determines how much data is written to an index page when it is created/rebuilt.
+
+Q24) What is the default fill factor value?
+By default, the fill factor value is set to 0.
+
+Q25) Where do you find the default Index fill factor and how to change it?
+The easiest way to find and change the default fill factor value is from Management Studio, right-click the SQL Server and choose properties. In the Server Properties, choose Database Settings, you should see the default fill factor value in the top section. You can change to the desired value there and click OK to save the changes.
+
+The other option of viewing and changing this value is using
+
+Q26) What is a system database and what is a user database?
+System databases are the default databases that are installed when the SQL Server is installed. Basically, there are 4 system databases: Master, MSDB, TempDB, and Model. It is highly recommended that these databases are not modified or altered for the smooth functioning of the SQL System.
+A user database is a database that we create to store data and start working with the data.
+
+Q27) What are the recovery models for a database?
+There are 3 recovery models available for a database. Full, Bulk-Logged and Simple are the three recovery models available.
+
+Q28) What is the importance of a recovery model?
+Primarily, the recovery model is chosen keeping in view the amount of data loss one can afford to. If one expects to have minimal or no data loss, choosing the Full recovery model is a good choice. Depending on the recovery model of a database, the behavior of database log file changes. I would recommend you read more material on log backups and log file behavior and so on to understand in depth.
+
+Q29) What is Replication?
+Replication is a feature in SQL Server that helps us publish database objects and data and copy (replicate) it to one or more destinations. It is often considered as one of the High-Availability options. One of the advantages of Replication is that it can be configured on databases which are in simple recovery model.
+
+Q30) What the different types of Replication and why are they used?
+There are basically 3 types of replication: Snapshot, Transactional and Merge Replication. The type of Replication you choose depends on the requirements and/or the goals one is trying to achieve.For example, Snapshot Replication is useful only when the data inside the tables does not change frequently and the amount of data is not too large, such as a monthly summary table or a product list table etc. Transactional Replication would useful when maintaining a copy of a transactional table such as sales order tables etc. Merge Replication is more useful in case of remote / distributed systems where the data flow can be from multiple sites, for example, sales done at a promotional event which might not be connected to the central servers always.
+
+Q31) What the different components of Replication and what is their use?
+The 3 main components in Replication are Publisher, Distributor, and Subscriber. The publisher is the data source of a publication. The distributor is responsible for distributing the database objects to one or more destinations. The subscriber is the destination where the publisher's data is copied/replicated.
+
+Q32) What are the different Topologies in which Replication can be configured?
+Replication can be configured in any topology depending keeping in view of the complexity and the workload of the entire Replication. It can be any of the following:
+
+Publisher, Distributor, and Subscriber on the same SQL Instance.
+Publisher and Distributor on the same SQL Instance and Subscriber on a separate Instance.
+Publisher, Distributor, and Subscriber on individual SQL Instances.
+Q33) If you are given access to a SQL Server, how do you find if the SQL Instance is a named instance or a default instance?
+I would go to the SQL Server Configuration Manager. In the left pane of the tool, I would select SQL Server Services, the right side pane displays all of the SQL Server Services/components that are installed on that machine. If the Service is displayed as (MSSQLSERVER), then it indicates it is a default instance, else there will be the Instance name displayed.
+
+Q34) What are the different authentication modes in SQL Server and how can you change authentication mode?
+SQL Server has 2 Authentication modes; Windows Authentication and SQL Server and Windows Authentication mode also referred to as Mixed Mode.
+
+Q35) What are the differences in Clustering in SQL Server 2005 and 2008 or 2008 R2?
+On SQL Server 2005, installing SQL Server failover cluster is a single step process whereas on SQL Server 2008 or above it is a multi-step process. That is, in SQL Server 2005, the Installation process itself installs on all of the nodes (be it 2 nodes or 3 nodes). In 2008 or above this has changed, we would need to install separately on all the nodes. 2 times if it is a 2 node cluster or 3 times in a 3 node cluster and so on.
+
+Q36) What is meant by Active-Passive and Active-Active clustering setup?
+An Active-Passive cluster is a failover cluster configured in a way that only one cluster node is active at any given time. The other node, called as the Passive node is always online but in an idle condition, waiting for a failure of the Active Node, upon which the Passive Node takes over the SQL Server Services and this becomes the Active Node, the previous Active Node now being a Passive Node.
+
+An Active-Active cluster is a failover cluster configured in a way that both the cluster nodes are active at any given point in time. That is, one Instance of SQL Server is running on each of the nodes always; when one of the nodes has a failure, both the Instances run on the only one node until the failed node is brought up (after fixing the issue that caused the node failure). The instance is then failed over back to its designated node.
+
+Q37) List out some of the requirements to setup a SQL Server failover cluster.
+Virtual network name for the SQL Server, Virtual IP address for SQL Server, IP addresses for the Public Network and Private Network(also referred as Heartbeat) for each node in the failover cluster, shared drives for SQL Server Data and Log files, Quorum Disk, and MSDTC Disk.
+
+Q38) What is Transparent Data Encryption?
+
+Introduced in SQL Server 2008 Transparent Data Encryption (TDE) is a mechanism through which you can protect the SQL Server Database files from unauthorized access through encryption. Also, TDE can protect the database backups of the instance on which TDE was setup.
+
+Q39) Does Transparent Data Encryption provide encryption when transmitting data across the network?
+No, Transparent Data Encryption (TDE) does not encrypt the data during transfer over a communication channel.
+
+Q40) What are the operating modes in which Database Mirroring runs?
+Database Mirroring runs in 2 operating modes High-Safety Mode and High-Performance Mode.
+
+Q41) What is the difference between the 2 operating modes of Database Mirroring (mentioned in the above answer)?
+1. High-Safety Mode is to ensure that the Principal and Mirrored database are synchronized state, that is the transactions are committed at the same time on both servers to ensure consistency, but there is/might be a time lag.
+2. High-Performance Mode is to ensure that the Principal database run faster, by not waiting for the Mirrored database to commit the transactions. There is a slight chance of data loss and also the Mirrored database can be lagging behind (in terms being up to date with the Principal database) if there is a heavy load on the Mirrored Server.
+
+Q42) When setting Replication, is it possible to have a Publisher as 64 Bit SQL Server and Distributor or Subscribers as a 32 Bit SQL Server.
+Yes, it is possible to have various configurations in a Replication environment.
+
+Q43) What is the difference between dropping a database and taking a database offline?
+Drop database deletes the database along with the physical files, it is not possible to bring back the database unless you have a backup of the database. When you take a database offline, you the database is not available for users, it is not deleted physically, it can be brought back online.
+
+Q44) Which autogrowth database setting is good?
+Setting an autogrowth in multiples of MB is a better option than setting autogrowth in percentage (%).
+
+Q45) What are the different types of database compression introduced in SQL Server 2008?
+Row compression and Page Compressionn.
+
+Q46) What are the different types of Upgrades that can be performed in SQL Server?
+In-place upgrade and Side-by-Side Upgrade.
+
+Explore SQL Server DBA Sample Resumes! Download & Edit, Get Noticed by Top Employers!Download Now!
+
+Q47) On a Windows Server 2003 Active – Passive failover cluster, how do you find the node which is active?
+Using Cluster Administrator, connect to the cluster and select the SQL Server cluster.  Once you have selected the SQL Server group, on the right-hand side of the console, the column“Owner” gives us the information of the node on which the SQL Server group is currently active.
+
+Q48) How do you open a Cluster Administrator?
+From Start -> Run and type CluAdmin (case insensitive) and the Cluster Administrator console is displayed OR you can also go to Start -> All Programs -> Administrative Tools -> Cluster Administrator.
+
+Q49) Due to some maintenance being done, the SQL Server on a failover cluster needs to be brought down. How do you bring the SQL Server down?
+In the Cluster Administrator, rick click on the SQL Server Group and from the popup menu item choose to Take Offline.
+
+Q50) What are the different ways you can create Databases in SQL Server?
+1.T-SQL; Create Database command.
+2.Using Management Studio
+3.Restoring a database backup
+4.Copy Database wizard
