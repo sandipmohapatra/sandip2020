@@ -1,4 +1,13 @@
+https://www.marketing91.com/four-types-production/
 
+https://www.investopedia.com/terms/b/batch-processing.asp
+
+https://www.helpsystems.com/resources/articles/batch-processing-how-it-evolved-and-how-your-business-benefits
+
+https://www.xenonstack.com/insights/what-is-modern-batch-processing/
+
+http://publib.boulder.ibm.com/tividd/td/BSM/GC32-0799-01/en_US/HTML/bsma19.htm
+------------------------------------------------------------------------------------------------------------------
 Batch Management
 ---------------------------------------------
 
@@ -21,10 +30,8 @@ A console administrator determines which batch schedules they need to monitor. A
 
 Four types of production
 
-
 There are 4 different types of productions which are most commonly used. Which type of production should be used by the company depends on the type of product being manufactured, the demand of the product as well as the supply of raw materials. Taking these factors into consideration, below are the 4 types of Production.
 
-Page Contents	
 1) Unit or Job type of production
 This type of production is most commonly observed when you produce one single unit of a product. A typical example of the same will be tailored outfits which are made just for you or a cake which is made just like you want it.
 
@@ -69,6 +76,7 @@ Mass production is generally used to dole out huge volumes of the product
 It is used only if the product is standardized
 Demand does not play a major role in a Mass production. However, production capacity determines the success of a mass production.
 Mass production requires huge initial investment and the working capital demand is huge too.
+
 4) Continuous production or Process production
 There is a lot of confusion between mass production and continuous production. It can be differentiated by a single element. The amount of mechanical work involved. In Mass production, both machines and humans work in tandem. However, in continuous production, most of the work is done by machines rather than humans. In continuous production, the production is continuous,24×7 hours, all days in a year.
 
@@ -88,7 +96,7 @@ Batch processing is the processing of transactions in a group or batch. No user 
 
 While batch processing can be carried out at any time, it is particularly suited to end-of-cycle processing, such as for processing a bank's reports at the end of a day or generating monthly or biweekly payrolls.
 
-KEY TAKEAWAYS
+
 Batch processing is a technique for automating and processing multiple transactions as a single group.
 Batch processing helps in handling tasks like payroll, end-of-month reconciliation, or settling trades overnight.
 Batch processing systems can save money and labor over time, but they may be costly to design and implement up-front.
@@ -130,4 +138,38 @@ Someone within the company or organization should be familiar with the system. T
 
 Cost
 Batch processing infrastructure can be an expensive capital outlay. For some businesses, the costs may seem unfeasible.
+----------------------------------------------------------------------------------------
+Job Scheduler Monitoring
 
+1)Tivoli Workload Scheduler for z/OS and Tivoli Operations Planning and Control
+Tivoli Workload Scheduler for z/OS and Tivoli Operations Planning and Control are robust production work-load scheduling systems for the OS/390 platform. Through the creation of long term and current (daily) plans, applications, calendars, and special resources, production work loads can be scheduled to run automatically, taking into consideration dependencies, calendar issues (such as weekends or holidays), and special processing requirements. Tivoli Workload Scheduler for z/OS andTivoli Operations Planning and Control each consist of:
+
+A controller where automatic planning and control takes place
+One or more trackers, which submit jobs and track events
+Abnormal-end conditions, run times, and several other pieces of information are gathered and used for reporting status.
+2)Computer Associates CA-7
+Bulk discovery data is captured by the processing of forecast reports that are generated at user-determined intervals. The jobs are grouped by application under Batch Schedule Set icons on the All Resources view. These jobs can then be viewed from the Batch Management Summary view, which is available with a right mouse click at any level of the hierarchy.
+
+Event data is captured by a CA-7 user exit that processes messages as they are written to the CA-7 browse dataset. This exit, SASSXX17, is an assembler routine that processes a predetermined set of messages from CA-7 that provide notification of certain events for each job.
+These events are:
+Job start,Job end,Job abend,Job late to start,Job running too long,New occurrence of job added to schedule
+3)BMC CONTROL-M for OS/390
+Job discovery data is qualified using the CONTROL-M for OS/390 Application, Group, and Member Name (jobname), with a lower level of uniqueness being provided with CONTROL-M for OS/390 Order-ID from Job Scheduling actions.
+
+4)ASG-Zeke
+ASG-Zeke is an automated scheduling and dispatching system that monitors time and activities and performs real time scheduling for MVS operating systems. Zeke automates production control processes by scheduling and dispatching events. Events are defined as one of the following:
+
+Batch job
+Message to the console
+System command
+Zeke command
+VM command
+Work center function
+Zeke performs many tasks in the enterprise, including all of the following tasks:
+
+Automate event dispatching
+Manage resources
+Automate job abend/recovery and restart
+Automate modification of JCL and control cards
+Respond automatically to job messages
+Submit and track job events on other platforms
