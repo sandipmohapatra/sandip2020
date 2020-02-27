@@ -6,7 +6,7 @@ update mhasisstudent set salary=15000 where name='kiran';
 update mhasisstudent set salary=20000 where name='sunil';
 
 
-select * from mhasisstudent;
+select * from mhasisstudent; 
 --------------------------------------------------------------------------------
 PRIMARY KEY
 ---------------------------------------
