@@ -1,44 +1,67 @@
-Data type categories
+insert into mhasisstudent values(101,'sandip','bangalore',7766554433,'sandip@gmaiul.com');
+insert into mhasisstudent values(103,'sunil','bangalore',7766554433,'sunil@gmaiul.com');
+update mhasisstudent set empno=1001 where name='sandip'; 
+update mhasisstudent set salary=10000 where name='sandip';
+update mhasisstudent set salary=15000 where name='kiran';
+update mhasisstudent set salary=20000 where name='sunil';
 
-Data types in SQL Server are organized into the following categories:
+
+select * from mhasisstudent;
+--------------------------------------------------------------------------------
+PRIMARY KEY
+---------------------------------------
+CREATE TABLE cricketers  
+( cricketer_id INT PRIMARY KEY,  
+  last_name VARCHAR(50) NOT NULL,  
+  first_name VARCHAR(50) NOT NULL,  
+  salary MONEY  
+);   
+
 -------------------------------------------------------------------------------------
-Exact numerics
-Unicode character strings
-Approximate numerics
-Binary strings
-Date and time
-Character strings
----------------------------------------------------------------------
-Exact numerics
-------------------------------------------
-bigint	numeric
-bit	smallint
-decimal	smallmoney
-int	tinyint
-money
------------------------------------------------	
-Approximate numerics
-------------------------------------------------
-float	real
-------------------------------------------------
-Date and time
-----------------------------------------------
-date	datetimeoffset
-datetime2	smalldatetime
-datetime	time
+CREATE VIEW Student_view AS  
+SELECT id, name, age  
+FROM Student  
+WHERE id > 3; 
+-------------------------------------------------------------
+
+aggregate function
 --------------------------------
-Character strings
---------------------------------
-char	varchar
-text	
-------------------------------------------
-Unicode character strings
------------------------------------------
-nchar	nvarchar
-ntext	
--------------------------------------
-Binary strings
--------------------------------------
-binary	varbinary
-image
----------------------------------------------
+1) SELECT MIN(salary) AS "Lowest Salary"  FROM Employees; 
+2)SELECT MAX(salary) AS "Highest Salary"  FROM Employees;
+3)SELECT SUM(salary) AS "Total Salary"  FROM Employees 
+WHERE salary > 20000;   
+4)SELECT AVG(salary) AS "Average Salary"  FROM Employees; 
+5)SELECT COUNT(id)  FROM Employees;  
+--------------------------------------------------------------------------------
+select * from mhasisstudent where salary=10000;
+select * from mhasisstudent where salary<>10000;
+select * from mhasisstudent where salary!=10000;
+select * from mhasisstudent where salary in(10000,20000);
+select * from mhasisstudent where salary not in(10000,20000);
+select * from mhasisstudent where salary between 10000 and 20000;
+-------------------------------------------------------------------------
+SQL Server Comparison Operator
+-------------------------------------------------------------------------------------
+1)=		It specifies equal symbol.
+2)<>		It specifies not equal symbol.
+3)!=		It specifies not equal symbol.
+4)>		It specifies greater than symbol.
+5)>=		It specifies greater than or equal symbol.
+6)<		It specifies less than symbol.
+7)<=		It specifies less than or equal symbol.
+8)!>		It specifies not greater than symbol.
+9)!<		It specifies not less than symbol.
+10)IN ( )		It matches a value in a list.
+11)NOT		It is used to negate a condition.
+12)BETWEEN	It is used to specify within a range (inclusive) value.
+13)IS NULL	It specifies null value.
+14)IS NOT NULL	It specifies non-null value.
+15)LIKE		It specifies pattern matching with % and _
+16)EXISTS	It specifies that the condition is met if subquery returns at least one row.
+
+17) SELECT DISTINCT salary  FROM Employees WHERE salary > 15000; 
+18)SELECT department, SUM(salary) AS "Total salary"  
+  FROM Employee2  
+  GROUP BY department;
+
+ 
