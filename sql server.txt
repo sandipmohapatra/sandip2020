@@ -10,29 +10,28 @@ select * from mhasisstudent;
 --------------------------------------------------------------------------------
 PRIMARY KEY
 ---------------------------------------
-CREATE TABLE cricketers  
-( cricketer_id INT PRIMARY KEY,  
-  last_name VARCHAR(50) NOT NULL,  
-  first_name VARCHAR(50) NOT NULL,  
-  salary MONEY  
-);   
-
+CREATE TABLE cricketer(cricketer_id INT PRIMARY KEY,last_name NCHAR(50) NOT NULL,first_name NCHAR(50) NOT NULL,salary MONEY);   
 -------------------------------------------------------------------------------------
-CREATE VIEW Student_view AS  
-SELECT id, name, age  
-FROM Student  
-WHERE id > 3; 
--------------------------------------------------------------
 
-aggregate function
---------------------------------
-1) SELECT MIN(salary) AS "Lowest Salary"  FROM Employees; 
+aggregate function (for column)
+-----------------------------------------------------------------------------------------
+1) SELECT MIN(salary) AS "Lowest Salary"  FROM mhasisstudent; 
 2)SELECT MAX(salary) AS "Highest Salary"  FROM Employees;
 3)SELECT SUM(salary) AS "Total Salary"  FROM Employees 
 WHERE salary > 20000;   
 4)SELECT AVG(salary) AS "Average Salary"  FROM Employees; 
 5)SELECT COUNT(id)  FROM Employees;  
+
+6)SELECT MAX(salary) AS "High Salary"  FROM mhasisstudent group by address; 
+7)SELECT address,MAX(salary) AS "Highest Salary"  FROM mhasisstudent group by address; 
+8)SELECT MIN(salary) AS "Lowest Salary"  FROM mhasisstudent group by address; 
 --------------------------------------------------------------------------------
+
+9)SELECT empno,name,address,phoneno,salary FROM mhasisstudent order by salary desc;
+10)SELECT empno,name,address,phoneno,salary FROM mhasisstudent order by salary asc;
+11)SELECT distinct salary FROM mhasisstudent order by salary desc;
+12)SELECT distinct salary FROM mhasisstudent order by salary asc;
+--------------------------------------------------------------------------------------------------
 select * from mhasisstudent where salary=10000;
 select * from mhasisstudent where salary<>10000;
 select * from mhasisstudent where salary!=10000;
@@ -59,7 +58,8 @@ SQL Server Comparison Operator
 15)LIKE		It specifies pattern matching with % and _
 16)EXISTS	It specifies that the condition is met if subquery returns at least one row.
 
-17) SELECT DISTINCT salary  FROM Employees WHERE salary > 15000; 
+17)SELECT DISTINCT salary  FROM Employees WHERE salary > 15000; 
+
 18)SELECT department, SUM(salary) AS "Total salary"  
   FROM Employee2  
   GROUP BY department;
