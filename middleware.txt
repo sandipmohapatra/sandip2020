@@ -22,5 +22,49 @@ step-2)middleware (servlet)
 step-3)backend (oracle)
 step-4)display a message (success)
 
+--------------------------------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Student Registration Page</center></h1><hr><hr>
+<form action="second.jsp">
+<table>
+<tr><td>Enter your name<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter your address<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter your phone no<td><input type=text name=t3 size=20></tr>
+<tr><td><input type=submit value=submit></tr>
+</table>
+</form>
+</body>
+</html>
+
+--------------------------------------------------------
+<%@page  import="java.sql.*" %>
+<% String a=request.getParameter("t1");
+String b=request.getParameter("t2");
+String c=request.getParameter("t3");%>
+
+<% out.println("the name is"+a);
+out.println("<br><br>");
+out.println("the address is"+b);
+out.println("<br><br>");
+out.println("the phone no is"+c);%>
+
+<%
+try
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection con = DriverManager.getConnection
+("jdbc:oracle:thin:@localhost:xe", "system", "1234");
+PreparedStatement st =con.prepareStatement
+("insert into employee values(?,?,?)");
+	st.setString(1, a);st.setString(2, b);st.setString(3,c);
+		st.execute();
+		out.println("row inserted");
+		}
+catch(Exception ae)
+{ae.printStackTrace();}
+		%>
+------------------------------------
+
 
 
