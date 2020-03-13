@@ -1,0 +1,47 @@
+SD-WAN 
+---------------------------
+SD-WAN is a software-defined approach to managing the WAN.
+
+Key advantages include:
+-----------------------------------
+Reducing costs with transport independence across MPLS, 4G/5G LTE, and other connection types.
+Improving application performance and increasing agility.
+Optimizing user experience and efficiency for software-as-a-service (SaaS) and public-cloud applications.
+Simplifying operations with automation and cloud-based management.
+The traditional WAN architecture was limited to enterprise, branch, and data center. Once an organization adopts cloud-based applications in the form of SaaS and IaaS, its WAN architecture experiences an explosion of traffic accessing applications distributed across the globe.
+
+These changes have multiple implications for IT. Employee productivity may be compromised by SaaS-application performance problems. WAN expenses can rise with inefficient use of dedicated and backup circuits. IT fights a daily, complex battle of connecting multiple types of users with multiple types of devices to multiple cloud environments.
+
+With SD-WAN, IT can deliver routing, threat protection, efficient offloading of expensive circuits, and simplification of WAN network management. Business benefits can include the following:
+-----------------------------------------------------------------------
+SDDC (software-defined data center)
+-----------------------------------------------------------------------
+An SDDC (software-defined data center) is a data storage facility in which all infrastructure elements -- networking, storage, CPU and security -- are virtualized and delivered as a service. Deployment, operation, provisioning and configuration are abstracted from hardware. 
+
+An SDDC is currently more of a concept than a commonly implemented practice, but it has seen incremental adoption by cloud service providers and data-center-as-a-service providers. The list includes Amazon, Google and the Open Compute Project.
+
+Components of an SDDC
+Virtualization is central to the software-defined data center. There are three major SDDC building blocks:
+
+Network virtualization combines network resources by splitting the available bandwidth into independent channels that can each be assigned -- or reassigned -- to a particular server or device in real time.
+Storage virtualization pools physical storage from multiple network storage devices into what appears to be a single storage device managed from a central console.
+Server virtualization masks server resources, including the number and identity of individual physical servers, processors and operating systems (OSes), from server users. The intention is to spare users from managing complicated server-resource details. It also increases resource sharing and utilization, while maintaining the ability to expand capacity at a later date.
+-------------------------------------------
+SDN 
+Software-Defined Networking (SDN) is a network architecture approach that enables the network to be intelligently and centrally controlled, or ‘programmed,’ using software applications. This helps operators manage the entire network consistently and holistically, regardless of the underlying network technology.
+
+SDN enables the programming of network behavior in a centrally controlled manner through software applications using open APIs. By opening up traditionally closed network platforms and implementing a common SDN control layer, operators can manage the entire network and its devices consistently, regardless of the complexity of the underlying network technology.
+
+There are four critical areas in which SDN technology can make a difference for an organization.
+
+
+1) Network programmability: SDN enables network behavior to be controlled by the software that resides beyond the networking devices that provide physical connectivity. As a result, network operators can tailor the behavior of their networks to support new services, and even individual customers. By decoupling the hardware from the software, operators can introduce innovative, differentiated new services rapidly—free from the constraints of closed and proprietary platforms.
+
+
+2) Logically centralize intelligence and control: SDN is built on logically centralized network topologies, which enable intelligent control and management of network resources. Traditional network control methods are distributed. Devices function autonomously with limited awareness of the state of the network. With the kind of centralized control an SDN-based network provides, bandwidth management, restoration, security, and policies can be highly intelligent and optimized—and an organization gains a holistic view of the network.
+
+3) Abstraction of the network: Services and applications running on SDN technology are abstracted from the underlying technologies and hardware that provide physical connectivity from network control. Applications will interact with the network through APIs, instead of management interfaces tightly coupled to the hardware.
+
+
+4) Openness: SDN architectures usher in a new era of openness—enabling multi-vendor interoperability as well as fostering a vendor-neutral ecosystem. Openness comes from the SDN approach itself. The open APIs support a wide range of applications, including cloud orchestration, OSS/BSS, SaaS, and business-critical networked apps. In addition, intelligent software can control hardware from multiple vendors with open programmatic interfaces like OpenFlow. Finally, from within the SDN, intelligent network services and applications can run within a common software environment.
+
