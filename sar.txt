@@ -1,0 +1,13 @@
+SAR command in Linux to monitor system performance
+sar : System Activity Report
+
+It can be used to monitor Linux system’s resources like CPU usage, Memory utilization, I/O devices consumption, Network monitoring, Disk usage, process and thread allocation, battery performance, Plug and play devices, Processor performance, file system and more.Linux system Monitoring and analyzing aids understanding system resource usage which can help to improve system performance to handle more requests.
+
+By default SAR command displays result on the output screen, in addition result can also be stored in the file specified by the -o filename option.
+Any user can collect information about system performance using system activities flags. The SAR command will show only CPU monitoring activity if any flag is not specifies by user.
+
+To verify the sar version :
+hduser@mahesh-Inspiron-3543:~$ sar -V
+
+https://www.geeksforgeeks.org/sar-command-linux-monitor-system-performance/
+
