@@ -1,0 +1,46 @@
+Secure Sockets Layer (SSL) was the most widely deployed cryptographic protocol to provide security over internet communications before it was preceded by TLS (Transport Layer Security) in 1999. 
+
+SSL provides a secure channel between two machines or devices operating over the internet or an internal network. One common example is when SSL is used to secure communication between a web browser and a web server. This turns a website's address from HTTP to HTTPS, the ‘S’ standing for ‘secure’.
+
+HTTP is insecure and is subject to  attacks because the data being transferred from the web browser to the web server or between other endpoints, is transmitted in plaintext. This means attackers can intercept and view sensitive data, such as credit card details and account logins. When data is sent or posted through a browser using HTTPS, SSL ensures that such information is encrypted and secure from interception.
+
+How Do I Know a Website is Secure with SSL?
+Technically, SSL is a transparent protocol which requires little interaction from the end user when establishing a secure session. In the case of a browser, you can tell if a site is using SSL when a padlock is displayed or the address bar shows the URL as HTTPS instead of HTTP.
+
+SSL Certificates are small data files that digitally bind a cryptographic key to an organization’s details. When installed on a web server, it activates the padlock and the https protocol and allows secure connections from a web server to a browser. Typically, SSL is used to secure credit card transactions, data transfer and logins, and more recently is becoming the norm when securing browsing of social media sites.
+
+SSL Certificates bind together:
+
+A domain name, server name or hostname.
+An organizational identity (i.e. company name) and location.
+
+An organization needs to install the SSL Certificate onto its web server to initiate a secure session with browsers. Once a secure connection is established, all web traffic between the web server and the web browser will be secure.
+
+When a certificate is successfully installed on your server, the application protocol (also known as HTTP) will change to HTTPs, where the ‘S’ stands for ‘secure’.
+
+How Does an SSL Certificate Work?
+SSL Certificates use something called public key cryptography.
+
+This particular kind of cryptography harnesses the power of two keys which are long strings of randomly generated numbers. One is called a private key and one is called a public key.A public key is known to your server and available in the public domain. It can be used to encrypt any message. If Alice is sending a message to Bob she will lock it with Bob’s public key but the only way it can be decrypted is to unlock it with Bob’s private key. Bob is the only one who has his private key so Bob is the only one who can use this to unlock Alice’s message. If a hacker intercepts the message before Bob unlocks it, all they will get is a cryptographic code that they cannot break, even with the power of a computer.
+
+If we look at this in terms of a website, the communication is happening between a website and a server. Your website and server are Alice and Bob.
+
+Why Do I Need An SSL Certificate?
+SSL Certificates protect your sensitive information such as credit card information, usernames, passwords etc. It also:
+
+Keeps data secure between servers
+Increases your Google Rankings
+Builds/Enhances customer trust
+Improves conversion rates
+
+Where Do I Buy An SSL Certificate?
+SSL Certificates need to be issued from a trusted Certificate Authority. Browsers, operating systems, and mobile devices maintain list of trusted CA root certificates.
+
+The Root Certificate must be present on the end user's machine in order for the Certificate to be trusted. If it is not trusted the browser will present untrusted error messages to the end user. In the case of e-commerce, such error messages result in immediate lack of confidence in the website and organizations risk losing confidence and business from the majority of consumers.
+
+Companies like GlobalSign are known as trusted Certificate Authorities. This is because browser and operating system vendors such as Microsoft, Mozilla, Opera, Blackberry, Java, etc., trust that GlobalSign is a legitimate Certificate Authority and that it can be relied on to issue trustworthy SSL Certificates. The more applications, devices and browsers the Certificate Authority embeds its Root into, the better "recognition" the SSL Certificate can provide.
+
+GlobalSign was founded in 1996 in Europe and remains one of the longest running Certificate Authorities in the region.
+
+
+https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate
